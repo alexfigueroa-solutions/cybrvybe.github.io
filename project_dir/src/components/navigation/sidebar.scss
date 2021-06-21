@@ -18,38 +18,39 @@
     align-items: stretch;
     align-content: stretch;
     padding: 0.5rem 1rem;
-    border: 0.05rem solid $darkestblack;
-    box-shadow: 0.5rem 0.5rem 1rem 0rem $darkerblack, -0.5rem -0.5rem 1rem 0rem rgb(17,17,17), inset 0.5rem 0.5rem 1rem 0rem $darkerblack, inset -0.5rem -0.5rem 1rem 0rem $darkestblack;        
-        
+    
     
     
 }
 @keyframes navItemWrapperHover{
     0%{
+
+    }
+    25%{
+        border: 0.05rem solid $darkblack;
+        box-shadow: -0.5rem -0.5rem 0.5rem 0rem rgba(5, 5, 5, 0), inset 0.5rem 0.5rem 1rem 0rem rgba(30, 30, 30, 0), inset -0.5rem -0.5rem 1rem 0rem rgba(5, 5, 5, 0);
+        color: rgg(17,17,17);
+        transform: scale(120%) translateX(0.5rem);
+        background-color: $darkblack;
+        border-radius: 5% 5%;
+    }
+    100%{
         border: 0%;
-        box-shadow: 0rem 0rem 0rem 0rem rgba(5, 5, 5, 0), inset 0.5rem 0.5rem 1rem 0rem $darkerblack, inset -0.5rem -0.5rem 1rem 0rem rgb(30,30,30);        
+        box-shadow: 0.5rem 0.5rem 1rem 0rem $darkerblack, -0.5rem -0.5rem 1rem 0rem rgb(17,17,17), inset 0.5rem 0.5rem 1rem 0rem $darkestblack, inset -0.5rem -0.5rem 1rem 0rem $darkerblack;        
+        color: $normalprimary;
         border-radius: 0% 0%;
         background-color: rgba(5, 5, 5, 0);
         border: 0.05rem solid rgba(5, 5, 5, 0);
         transform: scale(100%) translateX(0rem); 
     }
-    100%{
-        border: 0.05rem solid $darkblack;
-        box-shadow: -0.025rem 0.05rem 0.5rem 0rem $darkestblack, inset 0.5rem 0.5rem 1rem 0rem rgb(30,30,30), inset -0.5rem -0.5rem 1rem 0rem $darkerblack;
-         
-        transform: scale(200%) translateX(3rem);
-        background-color: $darkblack;
-        border-radius: 5% 5%;
-    }
+    
 }
 .navItemWrapper:hover{
     animation: navItemWrapperHover 0.3s;
-    border: 0.05rem solid $darkblack;
-    transform: scale(200%) translateX(3rem);
-    background-color: $darkblack;
-    border-radius: 5% 5%;
-    box-shadow: -0.025rem 0.05rem 0.5rem 0rem $darkestblack, inset 0.5rem 0.5rem 1rem 0rem rgb(30,30,30), inset -0.5rem -0.5rem 1rem 0rem $darkerblack;
-         
+    color: $normalprimary;
+    border: 0.05rem solid $darkestblack;
+    box-shadow: 0.5rem 0.5rem 1rem 0rem $darkerblack, -0.5rem -0.5rem 1rem 0rem rgb(17,17,17), inset 0.5rem 0.5rem 1rem 0rem $darkestblack, inset -0.5rem -0.5rem 1rem 0rem $darkerblack;        
+        
 }
 .icon{
     align-self: center;

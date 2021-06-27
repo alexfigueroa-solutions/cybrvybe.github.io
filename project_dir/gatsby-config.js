@@ -33,5 +33,8 @@ module.exports = {
       },
       __key: "pages",
     },
+    
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`
   ],
 };

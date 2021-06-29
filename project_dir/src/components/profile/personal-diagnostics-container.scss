@@ -1,0 +1,17 @@
+@import "../abstract/color";
+.diagnosticsContainer{
+    display: flex;
+    flex-flow: row nowrap;
+
+    z-index: 8;
+    background-color: $darkestblack;
+    min-width: 35rem;
+    
+    align-items: center;
+    height: auto;
+    
+}
+
+.diagnosticsDisplay{
+    
+}

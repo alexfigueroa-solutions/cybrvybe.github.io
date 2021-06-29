@@ -4,7 +4,8 @@ import { Tabs, TabPanel, TabList, Tab  } from "react-tabs";
 export default class ImgTabs extends React.Component{
     render(){
         const{
-            nav_array = []
+            nav_array = [],
+            tab_panels = []
         } = this.props;
 
         return(
@@ -43,15 +44,14 @@ export default class ImgTabs extends React.Component{
                 </TabList>
                 <div className = "panelWrapper">
                     {
-                        nav_array.map(
-                            nav_dict => (
+                        tab_panels.map(
+                            tab_panel => (
                                 <div className = "panelDiv">
                                     <TabPanel className = "tabPanel">
-                                        <h3>
-                                            {
-                                                nav_dict["title"]
-                                            }
-                                        </h3>
+                                        
+                                        {
+                                            tab_panel
+                                        }
                                     </TabPanel>
                                 </div>
                             )

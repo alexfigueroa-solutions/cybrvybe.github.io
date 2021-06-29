@@ -1,0 +1,23 @@
+@import "../abstract/color";
+
+.profileTraitsContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0.5rem;
+    background-color: $darkestblack;
+    grid-gap: 1rem;
+    height:auto;
+    overflow-x: scroll;
+    width: 44rem;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.traitContainer{
+    background-color: $darkerblack;
+    padding: 1.5rem;
+    box-shadow: 0.5rem 0.5rem 1rem 0rem rgb(0,0,0), -0.5rem -0.5rem 1rem 0rem $darkerblack;
+    width: 10rem;
+    border-radius: 10%;;
+  
+    
+}

@@ -1,0 +1,19 @@
+@import "../abstract/color";
+
+.listsWrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+}
+
+.labelContainer{
+    width: fit-content;
+    padding: 0rem 0.5rem;
+    color: $darkestwhite;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+    font-size: 0.8rem;
+   
+}

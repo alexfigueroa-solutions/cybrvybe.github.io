@@ -3,13 +3,15 @@
 
 .sidebarWrapper{
     background-color: $darkerblack;
-    min-height: 100%;
+ 
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     color: $darkestwhite;
     padding: 0.5rem;
     width: fit-content;
+    z-index: 10;
+    box-shadow: 0rem 0.5rem 2rem 0rem $darkestblack;
     
 }
 .introWrapper{

@@ -9,14 +9,14 @@ export default class PersonalDiagnosticsContainer extends React.Component{
         } = this.props;
         return(
             <div className = "diagnosticsContainer">
-                <AnimatedHead></AnimatedHead>
+                
                 <div className = "diagnosticsDisplay">
                     {
                         diagnostics_entry_list.map(
                             diagnostic => (
                                 <div>
                                    
-                                    <AnimatedTyper prompt = {diagnostic.prompt + ": " + diagnostic.answer}></AnimatedTyper>
+                                    <AnimatedTyper prompt = {diagnostic.prompt + ": " + diagnostic.answer} font = "Digitatron" font_size = "0.7"></AnimatedTyper>
                                    
                                 </div>
                             )

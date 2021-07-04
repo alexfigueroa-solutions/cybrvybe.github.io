@@ -1,4 +1,5 @@
 import React from "react";
+import SectionDividingLabel from "../general/section-dividing-label";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../profile/profile-tech-container.scss";
 export default class ProfileTechContainer extends React.Component{
@@ -9,9 +10,7 @@ export default class ProfileTechContainer extends React.Component{
 
         return(
             <div className = "wrapper">
-                <div className = "labelContainer">
-                    <h3 className = "label">Technologies</h3>
-                </div>
+                <SectionDividingLabel label_name = "Technologies"></SectionDividingLabel>
                 <div className = "profileTechContainer">
                     {
                         tech_list.map(

@@ -13,35 +13,37 @@ export default class ImgTabs extends React.Component{
             <Tabs 
                 
              className = "tabSection">
-                <TabList className = "tabList">
-                
-                    {
-                        nav_array.map(
-                            nav_dict => (
-                                
-                                <Tab className = "tab"
-                                    selectedClassName = "selectedTab"
-                                    style = {
-                                        {
-                                            backgroundImage: "url(" + nav_dict['img_file'] + ")"
-                                        }
-                                    }>
-                                    <div className = "projectTitleDiv">
-                                        <h3 className = "projectTitle">
-                                            {
-                                                nav_dict["title"]
-                                            }
-                                        </h3>
-                                        
-                                    </div>
+                 <div className = "tabListWrapper">
+                    <TabList className = "tabList">
+                    
+                        {
+                            nav_array.map(
+                                nav_dict => (
                                     
-                                </Tab>
-                                
-                                
+                                    <Tab className = "tab"
+                                        selectedClassName = "selectedTab"
+                                        style = {
+                                            {
+                                                backgroundImage: "url(" + nav_dict['img_file'] + ")"
+                                            }
+                                        }>
+                                        <div className = "projectTitleDiv">
+                                            <h3 className = "projectTitle">
+                                                {
+                                                    nav_dict["title"]
+                                                }
+                                            </h3>
+                                            
+                                        </div>
+                                        
+                                    </Tab>
+                                    
+                                    
+                                )
                             )
-                        )
-                    }
-                </TabList>
+                        }
+                    </TabList>
+                </div>
                 <div className = "panelWrapper">
                     {
                         tab_panels.map(

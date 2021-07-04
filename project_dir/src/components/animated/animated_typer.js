@@ -4,7 +4,9 @@ import "./animated-typer.scss";
 export default class AnimatedTyper extends React.Component{
     render(){
         const {
-            prompt
+            prompt, 
+            font, 
+            font_size
         } = this.props;
         return(
             <div className = "animatedTyperWrapper">
@@ -14,13 +16,15 @@ export default class AnimatedTyper extends React.Component{
                     loop = {true}
                     cursor = {true}
                     className = "animatedTyperDiv"
+                   
                 >
-                    <span className = "animatedTyperText">{prompt}</span>
-                    <Typing.Delay ms = {1200} />
+                    <span className = "animatedTyperText" style = {{fontFamily: font, fontSize: font_size + "rem"}}>{prompt}</span>
+                    <Typing.Delay ms = {1500} />
                     <Typing.Backspace count={prompt.length} />
                     <Typing.Delay ms = {200} />
                 </Typing>
             </div>
+            
         )
     }
 }

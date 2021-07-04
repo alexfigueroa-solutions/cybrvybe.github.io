@@ -1,9 +1,21 @@
 
 @import "../abstract/color";
+@import "../abstract/fonts";
+.collapsed{
+    width: 0rem;
+    z-index:0;
+    visibility: hidden;
 
+}
+.name{
+    font-family: Digitatron;
+    color: $normalprimary;
+    text-shadow: 0rem 0rem 1rem $primarydull;
+}
 .sidebarWrapper{
     background-color: $darkerblack;
- 
+    position: sticky;
+    left: 0rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -13,6 +25,58 @@
     z-index: 10;
     box-shadow: 0rem 0.5rem 2rem 0rem $darkestblack;
     
+}
+@media screen and (max-width: 700px) {
+    .sidebarWrapper {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(0.5rem);
+        background-color: rgb(5,5,5, 0.6);
+        -webkit-backdrop-filter: blur(10rem);
+        z-index: 20;
+
+      
+    }
+    .mainNavContainer{
+        position: fixed;
+        overflow-y: scroll;
+        overflow-x: scroll;
+        top: 0rem;
+        left: 0rem;
+        height: 100%;
+       
+    }
+    .tabsSection{
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        top: 0rem;
+        margin-top: 0rem;
+        
+        
+       
+        
+    }
+    .introWrapper{
+     
+    }
+    .introWrapperWrapper{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    
+    .navItemWrapper{
+        width: 10rem;
+        
+    }
+}
+@media screen and (max-width: 360px){
+    .navItemWrapper{
+        padding: 0.25rem 0.5rem;
+        
+    }
 }
 .introWrapper{
     display: flex column nowrap;
@@ -24,6 +88,7 @@
     
 }
 
+
 .navItemWrapper{
     display: flex;
     flex-flow: row nowrap;
@@ -31,12 +96,11 @@
     align-items: stretch;
     align-content: stretch;
     padding: 0.5rem 1rem;
+    margin-left: 0rem;
     align-self: center;
     border: 0.05rem solid rgb(5,5,5,0);
-    margin-left: auto;
-    margin-right: auto;
     
-    
+    justify-self: center;
     
 }
 @keyframes navItemWrapperHover{
@@ -80,6 +144,14 @@
     transform: scale(100%) translateX(0rem); 
 
 }
+.navItemWrapperSelected:hover{
+    background-color: $normalprimary;
+    color: $darkestblack;
+    animation: none;
+    box-shadow: 0.5rem 0.5rem 1rem 0rem $darkerblack, -0.5rem -0.5rem 1rem 0rem rgb(17,17,17), inset 0.5rem 0.5rem 1rem 0rem $primarybright, inset -0.5rem -0.5rem 1rem 0rem $primarydull;        
+    font-weight: 900;
+    border-radius: 0% 0%;
+}
 
 .icon{
     align-self: center;
@@ -101,13 +173,45 @@
 }
 .socialIcon{
     padding: 0.5rem;
+    font-size: 1.25rem;
+    border: 0.1rem solid rgb(5,5,5,0);
+    color: $darkestwhite;
+    
+}
+@keyframes Zoom{
+    0%{
+        transform: scale(100%);
+        border-radius: 0%;
+        border: 0.1rem solid rgb(5,5,5,0);
+        color: $darkestwhite;
+
+    }
+    100%{
+        transform: scale(125%);
+        border-radius: 50%;
+        color: $darkestblack;
+        border: 0.1rem solid $normalprimary;
+    }
+}
+.socialIcon:hover{
+    background-color: $primarydull;
+    color: $darkestblack;
+    box-shadow: 0rem 0rem 0.5rem 0rem $normalprimary;
+    transform: scale(125%);
+    animation: Zoom 0.5s;
+    border-radius: 50%;
+    border: 0.1rem solid $normalprimary;
 }
 .navWrapper{
     
     margin-left: 0rem;
     
     display: flex column nowrap; 
-   padding-left: 0rem;
+    padding-left: 0rem;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    vertical-align: center;
 
 
     
@@ -142,4 +246,21 @@
     margin-right: auto;
     padding: 0.5rem;
     
+}
+
+.sidebarOpenBtn{
+   
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    position: fixed;
+    z-index: 25;
+    right: 0rem;
+    top: 0rem;
+    margin-top: 0.5rem;
+    background-color: $darkestblack;
+    color: $normalprimary;
+    border: 0.1rem solid $darkblack;
+}
+.sidebarCloseBtn{
+
 }

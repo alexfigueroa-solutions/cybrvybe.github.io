@@ -1,0 +1,97 @@
+@import "../abstract/color";
+@import "../abstract/fonts";
+
+.firstSectionProjectLayout{
+   
+  
+    display: flex;
+    justify-content:center;
+    align-self: center;
+    justify-self: center;
+
+}
+.secondSectionProjectLayout{
+    display: flex;
+    justify-content:space-evenly;
+    align-self: center;
+    justify-self: center;
+    padding: 1rem;
+
+}
+.thirdSectionProjectLayout{
+    padding: 1rem;
+}
+.projectLayoutWrapper{
+  
+    overflow-y:scroll;
+    height: 45rem;
+    width: 67.75rem;
+    
+    
+}
+.projectPageHeader{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.projectPageHeaderButtonContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0.05rem;
+    margin-right: 2.5rem;
+    
+}
+.githubButton{
+    
+    padding: 0.5rem;
+    border: 0.1rem solid $normalprimary;
+    border-radius:50%;
+    font-size: 2rem;
+    
+    box-shadow:0rem 0rem 1rem 0rem $normalprimary;
+
+}
+.iconLink{
+    z-index: 10;
+    text-decoration: none;
+    color: $normalprimary;
+  
+}
+.projectLinkButton{
+    background-color: $darkerblack;
+    padding: 0.5rem;
+    border: 0.1rem solid rgb(220,220,220);
+    border-radius: 50%;
+    color: rgb(220,220,220);
+    font-size: 2rem;
+    box-shadow: 0rem 0rem 1rem 0rem rgb(220,220,220);
+
+}
+.projectTitle{
+    font-family: Digitatron;
+    padding: 0rem 1rem;
+    text-shadow: 0rem 0rem 1rem $normalprimary;
+}
+
+
+
+@media screen and (max-width: 700px){
+    .projectLayoutWrapper{
+        max-width: 700px;
+        width: 100%;
+        
+        top: 0rem;
+        margin-top: 15rem;
+        bottom: 0rem;
+        overflow-y: scroll;
+        position: fixed;
+        height: auto;
+    }
+    .secondSectionProjectLayout{
+        flex-flow: column nowrap;
+
+    }
+}
+

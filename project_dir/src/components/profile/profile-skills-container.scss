@@ -17,3 +17,25 @@
     font-size: 0.8rem;
    
 }
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+    .listsWrapper{
+        flex-flow: column nowrap;
+        max-width:700px;
+        align-self: center;
+        grid-gap: 1.5rem;
+    }
+    .listsWrapperWrapper{
+        max-width: 700px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+}
+
+

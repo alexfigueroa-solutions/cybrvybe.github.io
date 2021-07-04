@@ -7,10 +7,25 @@
     background-color: $darkestblack;
     grid-gap: 1rem;
     height:auto;
-    overflow-x: scroll;
-    width: 44rem;
-    justify-content: space-evenly;
+    
+    width: auto;
+    
+    max-width:55rem;
+    justify-content: start;
     text-align: center;
+}
+.traitIcon{
+    text-align: center;
+    font-size: 2rem;
+}
+.traitTitle{
+    align-items: center;
+}
+.traitIconDiv{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 .traitContainer{
     background-color: $darkerblack;
@@ -18,6 +33,49 @@
     box-shadow: 0.5rem 0.5rem 1rem 0rem rgb(0,0,0), -0.5rem -0.5rem 1rem 0rem $darkerblack;
     width: 10rem;
     border-radius: 10%;;
+    height: 13.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:center;
+    text-align: center;
   
+    
+}
+.traitContainer:hover{
+    background-color: $primarydull;
+    color: $darkestblack;
+    .traitDescription{
+        color: $darkerblack;
+    }
+}
+.traitDescription{
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    color: $primarydull;
+}
+
+
+
+@media screen and (max-width: 700px){
+    .profileTraitsContainer{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        padding: 0rem;
+
+
+    }
+    .traitContainerWrapper{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        max-width: 700px;
+        width: 100%;
+    
+    }
+    .traitContainer{
+        width: 15rem;
+    }
     
 }

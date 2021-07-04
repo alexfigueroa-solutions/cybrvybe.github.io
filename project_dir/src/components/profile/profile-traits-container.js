@@ -11,9 +11,14 @@ export default class ProfileTraitsContainer extends React.Component{
                 {
                     traits_list.map(
                         trait => (
-                            <div className = "traitContainer">
-                                <FontAwesomeIcon icon = {trait.icon}></FontAwesomeIcon>
-                                <h3>{trait.title}</h3>
+                            <div className = "traitContainerWrapper">
+                                <div className = "traitContainer">
+                                    <div className = "traitIconDiv">
+                                        <FontAwesomeIcon className = "traitIcon" icon = {trait.icon}></FontAwesomeIcon>   
+                                    </div>
+                                    <h3 className = "traitTitle">{trait.title}</h3>
+                                    <p className = "traitDescription">{trait.description}</p>
+                                </div>
                             </div>
                         )
                     )

@@ -39,11 +39,25 @@
 .label{
 
 }
+@keyframes techEntryContainerHover{
+    0%{
+        background-color: $darkerblack;
+        box-shadow: 0.5rem 0.5rem 1rem 0rem $darkestblack, -0.5rem -0.5rem 1rem 0rem $darkblack;
+        color: $normalprimary;
+    }
+    100%{
+        background-color: $primarydull;
+        color: $darkestblack;
+        box-shadow: 0rem 0rem 1rem 0rem $primaryseethrough;
+
+    }
+}
 .techEntryContainer{
     text-align: center;
     background-color: $darkerblack;
     padding: 1rem;
     width: 5rem;
+    color: $normalprimary;
     height: 5rem;
     align-items: center;
     align-content: center;
@@ -57,6 +71,13 @@
     justify-content: space-evenly;
     min-width: 5rem;
     border-radius: 10%;
+    animation: techEntryContainerHover 1s reverse;
+}
+.techEntryContainer:hover{
+    background-color: $primarydull;
+    color: $darkestblack;
+    animation: techEntryContainerHover 0.5s;
+    box-shadow: 0rem 0rem 1rem 0rem $primaryseethrough;
 }
 .techIcon{
     font-size: 2.5rem;
@@ -67,15 +88,40 @@
   
 /* Track */
 ::-webkit-scrollbar-track {
-background-color:$primaryseethrough ;
+background-color:rgb(0,0,0);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background-color:$primarydull;
+    background-color:$darkblack;
+    border-radius: 10%;
+    box-shadow: 0rem 0rem 1rem 0rem $primarydull;
+    border: 0.05rem solid $normalprimary;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 background-color:$primarybright;
+}
+
+
+@media screen and (max-width: 700px){
+    .profileTechContainer{
+        display: flex;
+        
+        min-height: 0rem;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        
+        align-items: flex-start;
+        box-shadow: 0.5rem 0.5rem 1rem 0rem rgb(20,20,20), inset 0.5rem 0.5rem 1rem 0rem rgb(0,0,0);
+        background-color: $darkerblack;
+        max-height: 20rem;
+        grid-gap: 1rem;
+        overflow-x: scroll;
+        width: 100%;
+        
+
+    }
 }

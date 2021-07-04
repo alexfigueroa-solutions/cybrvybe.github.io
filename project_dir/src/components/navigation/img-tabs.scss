@@ -4,8 +4,8 @@
 .tabSection{
     display: flex;
     flex-flow: row nowrap;
-    height: 46rem;
-   
+    height: 44.23rem;
+    position: absolute;
     background-color: $darkerblack;
 
 }
@@ -22,9 +22,7 @@
     margin-left: 0rem;
     
 }
-.tabPanel{
 
-}
 .tabList{
     list-style: none;
     display: flex;
@@ -35,6 +33,7 @@
     overflow-x:hidden;
     overflow-y: scroll;
     justify-content: space-evenly;
+    height: 44.23rem;
     
 }
 .tab{
@@ -55,6 +54,7 @@
     align-items: center;
     align-content: center;
     font-weight: 900;
+    
     
 
 }
@@ -87,4 +87,56 @@
     align-items: center;
     text-shadow: rgb(0,0,0) 0rem 0rem 2rem;
 
+}
+
+
+
+
+
+@media screen and (max-width: 700px){
+    .tabList{
+        flex-flow: row nowrap;
+        top:0rem;
+        left: 0rem;
+        z-index:10;
+        width: 100%;
+        margin-right: 0rem;
+        padding: 0rem;
+        overflow-x: scroll;
+        height: auto;
+        justify-content: flex-start;
+
+    }
+    .tab{
+        width: auto;
+        height: 10rem;
+        width: 10rem;
+        min-width: 15rem;
+        
+       
+    }
+    .tabSection{
+        height: auto;
+        
+        position: relative;
+        flex-flow: column nowrap;
+    }
+    .tabListWrapper{       
+        position: fixed;
+        display: flex;
+        flex-flow: row nowrap;
+        top:0rem;
+        left: 0rem;
+        width: auto;
+        z-index:10;
+        width: 100%;
+        margin-top: 2rem;
+        align-items: center;
+       
+    
+      
+        justify-content: center;
+        padding: 0rem;
+    }
+    
 }

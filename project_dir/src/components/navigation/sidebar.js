@@ -8,36 +8,63 @@ import Image from "../Image";
 import array from '../../data/nav_list';
 import TextChanger from '../animated/text-changer';
 import AnimatedTyper from '../animated/animated_typer'; 
-
+import ResumeDownloadBtn from './resume-download-btn';
+import { RGBADepthPacking } from 'three';
 
 
 export default class Sidebar extends React.Component{
-    
+    constructor(props) {
+        super(props);
+        this.toggleNavbar = this.toggleNavbar.bind(this);
+        this.state = {
+            collapsed: false,
+        };
+    }
+  
+    toggleNavbar(e){
+        this.setState({
+            collapsed: !this.state.collapsed,
+        });
+    }
+
     render(){
+        
         const {
             nav_list = [],
             social_list = [],
             panel_list = []
         } = this.props;
+        const classOpenSidebar = "sidebarWrapper" + (this.state.collapsed? ' collapsed' : '')
         return(
             <div className = "mainNavContainer">
                 
                 <Tabs className = "tabsSection">
-                    <div className = "sidebarWrapper">
-                        <div className = "introWrapper">
-                            <Image src = "profile_pic.jpg" alt = {""} className = "profilePic"></Image>
-                            <AnimatedTyper prompt = {"Alejandro Figueroa"}></AnimatedTyper>
-                            <TextChanger text_array = {array["interests_list"]}></TextChanger>
+                <div className = "sidebarOpenBtnDiv">
+                    <button className = "sidebarOpenBtn" onClick={this.toggleNavbar}>&#9776;</button>
+
+                </div>
+                    <div className = {classOpenSidebar} style = {this.state.sidebarBackgroundColor} id = "sidebarWrapper">
+                        
+                        <div className = "introWrapperWrapper">
+                            <div className = "introWrapper">
+                                <Image src = "profile_pic.jpg" alt = {""} className = "profilePic"></Image>
+                                <h3 className = "name">Alejandro Figueroa</h3>
+                                <TextChanger text_array = {array["interests_list"]}></TextChanger>
+                            </div>
                         </div>
-                        <div class = "socialWrapper">
+                        <ResumeDownloadBtn></ResumeDownloadBtn>
+                        <div className = "socialWrapper">
                             {
                                 social_list.map(
                                     social_link => (
-                                        <FontAwesomeIcon 
-                                        icon = {social_link.icon_class}
-                                        className = "socialIcon">
+                                        <a href = {social_link.link}>
+                                            <FontAwesomeIcon 
+                                                icon = {social_link.icon_class}
+                                                className = "socialIcon">
 
-                                        </FontAwesomeIcon>
+                                            </FontAwesomeIcon>
+                                        </a>
+                                        
                                     )
                                 )
                             }

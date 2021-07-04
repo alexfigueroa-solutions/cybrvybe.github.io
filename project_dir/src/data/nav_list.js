@@ -21,32 +21,28 @@ const nav_list = [
     {
         icon_class: faRocket,
         title: "Startups"
-    },
-    {
-        icon_class: faPhone,
-        title: "Contact"
     }
   ];
   const social_links = [
     {
         icon_class: faGithub,
         medium: "Github",
-        link: ""
+        link: "https://github.com/cybrvybe"
     },
     {
         icon_class: faEnvelope,
         medium: "Email",
-        link:""
+        link:"mailto:alexfigueroa.cybr@gmail.com"
     },
     {
         icon_class: faMedium,
         medium: "Medium",
-        link: ""
+        link: "https://cybrvybe.medium.com/"
     },
     {
         icon_class: faLinkedin,
         medium: "LinkedIn",
-        link: ""
+        link: "https://www.linkedin.com/in/alejandro-figueroa-206596198/"
     }
   
   ];

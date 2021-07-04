@@ -9,12 +9,13 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "gatsby develop -H 192.168.1.149 -p 8000",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@brainhubeu/react-carousel": "^2.0.4",
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
@@ -24,6 +25,7 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "babel-runtime": "^6.26.0",
+    "bootstrap": "^5.0.2",
     "gatsby": "^3.4.1",
     "gatsby-image": "^3.8.0",
     "gatsby-plugin-gatsby-cloud": "^2.6.1",
@@ -38,12 +40,19 @@
     "gatsby-transformer-sharp": "^3.8.0",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
     "react-dom": "^17.0.1",
     "react-fontawesome": "^1.7.1",
     "react-helmet": "^6.1.0",
+    "react-responsive-carousel": "^3.2.18",
+    "react-router-dom": "^5.2.0",
+    "react-share": "^4.4.0",
     "react-tabs": "^3.2.2",
     "react-typing-animation": "^1.6.2",
     "sass": "^1.35.1",
     "three": "^0.129.0"
+  },
+  "devDependencies": {
+    "gatsby-plugin-mailchimp": "^5.2.2"
   }
 }

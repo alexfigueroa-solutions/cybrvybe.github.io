@@ -1,4 +1,4 @@
-import { faBrain, faBriefcase, faChartLine, faCog, faDatabase, faHandsHelping, faIcons, faMale, faMarker, faMicrochip, faObjectGroup, faProjectDiagram, faPuzzlePiece, faQuestion, faQuestionCircle, faStreetView } from "@fortawesome/free-solid-svg-icons";
+import { faBrain, faBriefcase, faChartLine, faCog, faDatabase, faHandsHelping, faIcons, faLightbulb, faMale, faMarker, faMicrochip, faObjectGroup, faProjectDiagram, faPuzzlePiece, faQuestion, faQuestionCircle, faStreetView } from "@fortawesome/free-solid-svg-icons";
 import { faFigma, faGit, faGithub, faPython, faReact, faRProject, faSass} from "@fortawesome/free-brands-svg-icons";
 const diagnostics = [
     {
@@ -16,21 +16,32 @@ const diagnostics = [
     {
         prompt: "Favorite programming language",
         answer: "Python"
+    },
+    {
+        prompt: "Interests",
+        answer: "Complexity, Graph Theory, AGI"
     }
 ];
 const traits_list = [
     {
         title: "Growth Mindset",
         icon: faBrain,
-        description: "Always learning more and diving deep. Anything is achievable as long as you take initiative and follow-through on mastering the prerequisite skills."
+        description: "Anything is achievable as long as you take initiative and follow-through on mastering the prerequisite skills."
     },
     {
-        title: "Curious",
-        icon: faQuestion
+        title: "Entrepreneurial",
+        icon: faLightbulb,
+        description: "Always working out my idea muscle by constantly thinking of products and solutions to problems."
     },
     {
-        title: "Driven",
-        icon: faStreetView
+        title: "Lifelong Learner",
+        icon: faStreetView,
+        description: "Always learning more and diving deep - and always have been."
+    },
+    {
+        title: "Excellence-Oriented",
+        icon: faBriefcase,
+        description: "When I seek out to do something, I seek out to execute it with mastery and excellence."
     }
 ];
  const tech_list = [
@@ -130,11 +141,23 @@ const technical_skills_list = [
     {
         title: "Data Modeling",
         icon: faObjectGroup
+    },
+    {
+        title: "Using Object Relational Mapping (ORM) to populate the database schema.",
+        icon: faDatabase
+    },
+    {
+        title: "Creating REST APIs",
+        icon: faDatabase
+    },
+    {
+        title: "Fetch data from REST API",
+        icon: faDatabase
     }
 ];
 const business_skills_list = [
     {
-        title: "Project Data Management",
+        title: "Creation/Extraction and management of project, product, business, and financial data.",
         icon: faProjectDiagram
     },
     {

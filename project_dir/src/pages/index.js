@@ -1,6 +1,7 @@
 import * as React from "react";
 import Sidebar from "../components/navigation/sidebar";
 import "./index.scss";
+import ContactLayout from "../components/contact/contact-layout";
 import dict from "../data/profile_data";
 import array from "../data/nav_list";
 import ItemList from "../components/navigation/item-list";
@@ -14,25 +15,31 @@ import ProfileLayout from "../components/profile/profile-layout";
 import startup_list from "../data/startup_data";
 import StartupTabPanelLayout from "../components/startups/startup-tab-panel-layout";
 // markup
+import ComingSoonLayout from "../components/navigation/coming-soon-layout";
 
 const IndexPage = () => {
   const project_tab_panels = [
-    <h1>profile</h1>,
-    <ProjectTabPanelLayout></ProjectTabPanelLayout>,
-    <h1>services</h1>,
-    <h1>blog</h1>,
-    <h1>startup</h1>,
-    <h1>contact</h1>
+    <ProjectTabPanelLayout project_dict = {project_list[0]}></ProjectTabPanelLayout>,
+    <ProjectTabPanelLayout project_dict = {project_list[1]}></ProjectTabPanelLayout>,
+    <ProjectTabPanelLayout project_dict = {project_list[2]}></ProjectTabPanelLayout>,
+    <ProjectTabPanelLayout project_dict = {project_list[3]}></ProjectTabPanelLayout>,
+    <ProjectTabPanelLayout project_dict = {project_list[4]}></ProjectTabPanelLayout>
   ];
   const blog_tab_panels = [
-    <BlogTabPanelLayout></BlogTabPanelLayout>,
-    <BlogTabPanelLayout></BlogTabPanelLayout>
+    <BlogTabPanelLayout blog_post = {blog_list[0]}></BlogTabPanelLayout>,
+    <BlogTabPanelLayout blog_post = {blog_list[1]}></BlogTabPanelLayout>
   ];
   const service_tab_panels = [
+    <ComingSoonLayout></ComingSoonLayout>,
+    <ComingSoonLayout></ComingSoonLayout>,
+    <ComingSoonLayout></ComingSoonLayout>,
+    <ComingSoonLayout></ComingSoonLayout>,
+    <ComingSoonLayout></ComingSoonLayout>,
+    <ComingSoonLayout></ComingSoonLayout>
 
   ];
   const startup_tab_panels = [
-    <StartupTabPanelLayout></StartupTabPanelLayout>
+    <ComingSoonLayout></ComingSoonLayout>
   ];
   const profile_skills_tab_panel_list = [
     <ItemList items_list = {dict["technical_skills_list"]}></ItemList>,
@@ -44,7 +51,7 @@ const IndexPage = () => {
     <ImgTabs nav_array = {services_list} tab_panels = {service_tab_panels}></ImgTabs>,
     <ImgTabs nav_array = {blog_list} tab_panels = {blog_tab_panels}>helloooo</ImgTabs>,
     <ImgTabs nav_array = {startup_list} tab_panels = {startup_tab_panels}></ImgTabs>,
-    <h1>Contact</h1>
+    <ContactLayout></ContactLayout>
   ];
   return (
         

@@ -1,6 +1,7 @@
 import React from "react";
 import "./project-stack-container.scss";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
+
 export default class ProjectStackContainer extends React.Component{
     render(){
         const{ project_stack = []} = this.props;
@@ -15,18 +16,14 @@ export default class ProjectStackContainer extends React.Component{
                                 <div className = "stackEntryDiv">
                                 
                                     <div className = "iconDiv">
-                                        <FontAwesomeIcon icon = {entry.icon}></FontAwesomeIcon>
+                                        <span className = "stackIcon" class="iconify" data-icon= {entry.icon}></span>
                                     </div>
                                     <div className ="titleDiv">
                                         <h3>
                                             {entry.title}
                                         </h3>
                                     </div>
-                                    <div className = "descriptionDiv">
-                                        <h3>
-                                            {entry.description}
-                                        </h3>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         )

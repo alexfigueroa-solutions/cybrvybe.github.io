@@ -1,26 +1,8 @@
-import confounding_data_pic from "../images/blogs/confounding-data.jpg";
+
 import tech_predictions_2020s_pic from "../images/blogs/tech-predictions-2020s.jpg";
 
 const blog_list = [
-    {
-        title: "Is Confounding Data Clouding Your Judgement?",
-        img_file: confounding_data_pic,
-        intro: "Despite the click-bait-y title, this article is pro-data. More specifically, it’s an introspection into the apparent disconnect between statistical logic and common statistical assumptions. It seems that many are drawing conclusions on data, before certifying the logic of their analysis.",
-        sections: [
-            {
-                header: "Common Assumptions",
-                body: "Common assumptions I hear are:'Most people fail, so that means you will too.', 'Most dropouts aren’t successful, so you most likely won’t be successful, either.', 'People from my socioeconomic background usually don’t ‘make it’, so neither will I.' I hear these excuses all the time. Sometimes, they bring up statistics to show that — in fact — most people/dropouts/peers aren’t successful. Does this actually mean that you — most likely — will not be successful? Most people immediately assume that their chance of success is equal to other people’s (who have attempted a similar venture) success rate. However, it may not be so bleak — or straightforward — after all."
-            },
-            {
-                header: "What Are Confounding Variable?",
-                body:"In statistics, confounding variables are variables that effect the value of both — independent and dependent — variables. When one fails to account for confounding variables in a statistical study, they cannot draw an accurate conclusion with certainty. In a hypothetical study, such as “Does dropping out make you less successful?”, the independent variable is the binary option of dropping out, versus not dropping out. The dependent variable is the individual’s success rate. Confounding variables would include, but are not limited to: the sequence of actions taken in one’s life — leading up to the event of dropping/not dropping out, passions, topic exposure, social capital, technological access, financial capital, character traits, location, etc. These are all confounding variables because they effect both the option of dropping out, as well as the success rate of an individual."
-            },
-            {
-                header: "Baseless Assumptions?",
-                body: "Are these assumptions (from Common Assumptions), thus, baseless? I’ll prove by hypothetical counterexample: if you were to drop out of college, but were a star sports player, musician, technical rockstar, and business-savvy genius from a young age, would you have the same success rate as everyone else? What if you had inherited 1 trillion dollars? What if you become best friends with Elon Musk before dropping out? What if you start a successful business before dropping out — what’s your success rate then? What if you’re fervently passionate about a subject, so self-study is more effective and productive? What if you go through the coursework, but don’t go to school? See, there are too many confounding variables to draw a conclusion. In order to draw an accurate conclusion, one would need all the personal and socioeconomic time series data of the individual, as well as all the personal and socioeconomic time series data of all interacting individuals. Only then, may one have enough data to draw an accurate conclusion on the success rate of any particular individual. The necessity to account for confounding variables applies to all statistical research, so remember to do so."
-            }
-        ]
-    },
+    
     {
         title: "The 4th Industrial Revolution: 10 World-Shifting Technological Predictions for the 2020s",
         img_file: tech_predictions_2020s_pic,

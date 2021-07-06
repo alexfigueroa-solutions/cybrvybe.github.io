@@ -2,14 +2,16 @@
 
 .profileLayoutWrapper{
     overflow-y:scroll;
-    height: 45rem;
+    height: 100%;
+    position: fixed;
     
 }
 @media screen and (max-width: 700px){
     .profileLayoutWrapper{
         height: 37rem;
+        position: relative;
         margin-bottom: 0rem;
-       
+        
    
         
     }

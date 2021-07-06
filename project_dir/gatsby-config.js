@@ -40,6 +40,7 @@ module.exports = {
         endpoint: "https://gmail.us6.list-manage.com/subscribe/post?u=cab5323e0840ac15cbc21da54&amp;id=12af27c85f"
       }
     },
+    
 
     
     `gatsby-plugin-sharp`,

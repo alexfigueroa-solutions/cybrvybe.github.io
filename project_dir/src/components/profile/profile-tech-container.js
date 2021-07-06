@@ -11,17 +11,19 @@ export default class ProfileTechContainer extends React.Component{
         return(
             <div className = "wrapper">
                 <SectionDividingLabel label_name = "Technologies"></SectionDividingLabel>
-                <div className = "profileTechContainer">
-                    {
-                        tech_list.map(
-                            tech_entry => (
-                                <div className = "techEntryContainer">
-                                    <FontAwesomeIcon className = "techIcon" icon = {tech_entry.icon}></FontAwesomeIcon>
-                                    <h3>{tech_entry.title}</h3>
-                                </div>
+                <div className = "profileTechContainerWrapper">
+                    <div className = "profileTechContainer">
+                        {
+                            tech_list.map(
+                                tech_entry => (
+                                    <div className = "techEntryContainer">
+                                        <span className = "techIcon" class="iconify" data-icon= {tech_entry.icon}></span>
+                                        <h3 className = "techEntryTitle">{tech_entry.title}</h3>
+                                    </div>
+                                )
                             )
-                        )
-                    }
+                        }
+                    </div>
                 </div>
             </div>
         )

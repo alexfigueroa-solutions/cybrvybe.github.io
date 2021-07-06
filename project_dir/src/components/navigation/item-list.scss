@@ -6,24 +6,30 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
-
-    border-radius:  0% 0% 10% 10%;
     grid-gap: 1rem;
     
 }
+.listWrapper:hover{
+    .titleWrapper{
+        background-color: $primarydull;
+        color: $darkestblack;
+    }
+    box-shadow: 0rem 0rem 1rem 0rem $primarydull;
+}
+
 .titleWrapper{
     text-align: center;
     
     text-transform: uppercase;
     font-size: 0.5rem;
     letter-spacing: 0.5rem;
-    font-weight: 100;
+    font-weight: 500;
     padding: 0.5rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    color: $darkestblack;
-    background-color: $primarydull;
+    color: $normalprimary;
+    background-color: $darkestblack;
    
 }
 
@@ -38,7 +44,7 @@
 .itemsWrapper{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     grid-gap: 1rem;
     height: 25rem;
     overflow-y: scroll;
@@ -67,7 +73,7 @@
     padding: 1rem;
     align-items: center;
     width:25rem;
-    
+    color: $darkestwhite;
     box-shadow: 0.5rem 0.5rem 1rem 0rem rgb(5,5,5,0), -0.5rem -0.5rem 1rem 0rem rgb(5,5,5,0);
     transform:scale(100%);
     animation: listItemDivHover 0.5s reverse;
@@ -79,11 +85,13 @@
     border: 0.05rem solid $darkblack;
     box-shadow: 0.5rem 0.5rem 1rem 0rem $darkestblack, -0.5rem -0.5rem 1rem 0rem $darkblack;
     transform: scale(105%);
+    color: $normalprimary;
+    
 }
 
-.itemIcon{
+.listItemIconDiv{
     font-size: 3rem;
-    text-align: center;
+    
 }
 .itemText{
     font-size: 0.8rem;

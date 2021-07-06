@@ -1,14 +1,17 @@
 @import "../abstract/color";
-
+@import "../profile/profile-tech-container.scss";
 .projectStackDiv{
-    display:flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    grid-gap: 0.5rem;
-    overflow-x:scroll;
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 10rem);
+    box-shadow: 0.5rem 0.5rem 1rem 0rem rgb(20,20,20), inset 0.5rem 0.5rem 1rem 0rem rgb(0,0,0);
+    background-color: $darkerblack;
     width: 100%;
-    background-color: $darkestblack;
+    grid-gap: 1rem;
+
+    
+}
+.stackIcon{
+    
     
 }
 @keyframes techEntryContainerHover{
@@ -28,25 +31,24 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    padding: 1rem;
-    height:8rem;
     width: 8rem;
+    height: 8rem;
+    padding: 1rem;
     background-color: $darkerblack;
     box-shadow: 0.5rem 0.5rem 1rem 0rem rgb(0,0,0), -0.5rem -0.5rem 1rem 0rem $darkestblack;
-    border-radius: 10%;
+    border: 0.1rem solid $darkerblack;
     grid-gap: 0rem;
     align-items: center;
     text-align: center;
 }
 .stackEntryDiv:hover{
-    background-color: $primarydull;
-    color: $darkestblack;
     animation: techEntryContainerHover 0.5s;
-    box-shadow: 0rem 0rem 1rem 0rem $primaryseethrough;
-    .descriptionDiv{
-        color: $darkerblack;
-    }
-    z-index:20;
+    color: $normalprimary;
+    box-shadow: 0rem 0rem 1rem 0rem $primarydull;
+    border: 0.1rem solid $normalprimary;
+  
+   
+
 }
 
 
@@ -54,16 +56,24 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 4rem;
     align-items: center;
+    
+    margin-top: 0rem;
+    top: 0rem;
+
 }
 .titleDiv{
     display: flex;
+    position: relative;
     flex-flow: row nowrap;
     justify-content: center;
     font-size: 0.8rem;
     align-items: center;
     text-transform: uppercase;
+    color: $darkestwhite;
+    
+    
 }
 .descriptionDiv{
     color: $darkestwhite;
@@ -80,6 +90,7 @@
     .projectStackDiv{
         display: flex; 
         flex-flow: row wrap;
+        justify-content: center;
     }
     .stackEntryDivWrapper{
         

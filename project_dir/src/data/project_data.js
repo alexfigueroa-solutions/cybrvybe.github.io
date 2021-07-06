@@ -5,7 +5,7 @@ import netwyrk_pic from "../images/projects/netwyrk.png";
 import neohacker_pic from "../images/projects/neo-hacker.png";
 import { faCheck, faCog, faDatabase, faMinus, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { faPython, faReact, faSass, faStripe } from "@fortawesome/free-brands-svg-icons";
-import { logos_dict } from "./icons/icons";
+import { logos_dict, status_icons } from "./icons/icons";
 
 
 
@@ -90,10 +90,26 @@ const project_list = [
                 status: "done"
             },
             {
+                title: "Ability to create a full-stack web application, with a decoupled front-end/back-end.",
+                status_icon: status_choices["done"].icon,
+                status: "done"
+            },
+            {
+                title: "Ability to identify and model core business data.",
+                status_icon: status_choices["done"].icon,
+                status: "done"
+            },
+            {
                 title: "Ability to plan, engineer, and develop an MVP.",
                 status_icon: status_choices["in_progress"].icon,
                 status: "in progress"
+            },
+            {
+                title: "Ability to manage and sell SAAS product.",
+                status_icon: status_choices["inactive"].icon,
+                status: "inactive"
             }
+            
                   ],
         repo_link: "https://github.com/cybrvybe/AU7OMA7A-BI",
         description: "AU7OMA7A-BI enables business owners and conscientious professionals to collect, manage, and analyze data pertaining to individuals', or organizations' successes in their career or business ventures.",
@@ -105,35 +121,60 @@ const project_list = [
             },
             {
                 title: "Django REST Framework",
-                icon: faCog,
+                icon: logos_dict["django"],
                 description: "REST API"
             },
             {
                 title: "React",
-                icon: faReact,
+                icon: logos_dict["react"],
                 description: "Component-based UI"
             },
             {
                 title: "Postgres",
-                icon: faDatabase,
+                icon: logos_dict["postgres"],
                 description: "Database"
             },
             {
-                title: "SCSS",
-                icon: faSass,
+                title: "SCSS/SASS",
+                icon: logos_dict["sass"],
                 description: "Styling"
             },
             {
                 title: "Python",
-                icon: faPython,
+                icon: logos_dict["python"],
                 description: "Backend"
+            },
+            {
+                title: "AWS Lambda",
+                icon: logos_dict["aws_lambda"]
+            },
+            {
+                title: "Chart.js",
+                icon: logos_dict["chart_js"]
+            },
+            {
+                title: "D3.js",
+                icon: logos_dict["d3"]
+            },
+            {
+                title: "Git",
+                icon: logos_dict["git"]
+            },
+            {
+                title: "Github",
+                icon: logos_dict["github"]
+            },
+            {
+                title: "Figma",
+                icon: logos_dict["figma"]
             }
 
         ],
         img_file: au7oma7a_bi_pic,
         roadmap: [
             {
-                title: "CRUD and MVP Functionality"
+                title: "CRUD and MVP Functionality",
+                status_icon: status_icons.done.icon
             },
             {
                 title: "Deploy Live Version"
@@ -191,6 +232,16 @@ const project_list = [
         ],
         demonstrated_capabilities: [
             {
+                title: "Translated client requirements into executable, technical requirements.",
+                status_icon: status_choices["done"].icon,
+                status: "done"
+            },
+            {
+                title: "Implemented technical solution to e-commerce/business problem.",
+                status_icon: status_choices["in_progress"].icon,
+                status: "in progress"
+            },
+            {
                 title: "Create Django REST API to connect to React in a loosely coupled fashion.",
                 status_icon: status_choices["in_progress"].icon,
                 status: "in progress"
@@ -201,17 +252,17 @@ const project_list = [
         stack: [
             {
                 title: "Python",
-                icon: faPython,
+                icon: logos_dict["python"],
                 description: "Backend"
             },
             {
                 title: "Django REST",
-                icon: faCog,
+                icon: logos_dict["django"],
                 description: "REST API"
             },
             {
                 title: "Stripe",
-                icon: faStripe,
+                icon: logos_dict["stripe"],
                 description: "Payment Processing"
             }
          
@@ -224,10 +275,12 @@ const project_list = [
         ],
         roadmap: [
             {
-                title: "Get Client Requirements"
+                title: "Get Client Requirements",
+                status_icon: status_icons["done"].icon
             },
             {
-                title: "Design Architecture/Environment"
+                title: "Translate into technical requirements",
+                status_icon: status_icons["done"].icon
             },
             {
                 title: "UI Mockups"
@@ -304,8 +357,16 @@ const project_list = [
         stack: [
             {
                 title: "Django",
-                icon: faCog,
+                icon: logos_dict["django"],
                 description: "Server-side logic"
+            },
+            {
+                title: "HTML",
+                icon: logos_dict["html"]
+            },
+            {
+                title: "CSS",
+                icon: logos_dict["css"]
             }
         ],
         img_file: netwyrk_pic,
@@ -318,8 +379,16 @@ const project_list = [
         stack: [
             {
                 title: "Gatsby",
-                icon: faCog,
+                icon: logos_dict["gatsby"],
                 description: "Static Sites"
+            },
+            {
+                title: "React",
+                icon: logos_dict["react"]
+            },
+            {
+                title: "JSON",
+                icon: logos_dict["json"]
             }
         ],
         features: [

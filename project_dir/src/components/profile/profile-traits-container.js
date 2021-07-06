@@ -14,7 +14,7 @@ export default class ProfileTraitsContainer extends React.Component{
                             <div className = "traitContainerWrapper">
                                 <div className = "traitContainer">
                                     <div className = "traitIconDiv">
-                                        <FontAwesomeIcon className = "traitIcon" icon = {trait.icon}></FontAwesomeIcon>   
+                                        <span className = "traitIcon" class="iconify" data-icon={trait.icon} data-inline="false"></span>   
                                     </div>
                                     <h3 className = "traitTitle">{trait.title}</h3>
                                     <p className = "traitDescription">{trait.description}</p>

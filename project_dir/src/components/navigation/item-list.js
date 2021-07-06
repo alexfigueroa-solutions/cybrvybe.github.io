@@ -20,7 +20,9 @@ export default class ItemList extends React.Component{
                                 items_list.map(
                                     item => (
                                         <div className = "listItemDiv">
-                                            <FontAwesomeIcon className = "itemIcon" icon = {item.icon}></FontAwesomeIcon>
+                                            <div className = "listItemIconDiv">
+                                                <span class="iconify" data-icon={item.icon} data-inline="false"></span>
+                                            </div>
                                             <h3 className = "itemText">{item.title}</h3>
                                         </div>
                                     )

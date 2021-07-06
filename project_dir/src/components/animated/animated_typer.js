@@ -11,7 +11,7 @@ export default class AnimatedTyper extends React.Component{
         return(
             <div className = "animatedTyperWrapper">
                 <Typing
-                    speed = {1}
+                    speed = {0.5}
                     count = {100}
                     loop = {true}
                     cursor = {true}
@@ -19,7 +19,7 @@ export default class AnimatedTyper extends React.Component{
                    
                 >
                     <span className = "animatedTyperText" style = {{fontFamily: font, fontSize: font_size + "rem"}}>{prompt}</span>
-                    <Typing.Delay ms = {1500} />
+                    <Typing.Delay ms = {10000} />
                     <Typing.Backspace count={prompt.length} />
                     <Typing.Delay ms = {200} />
                 </Typing>

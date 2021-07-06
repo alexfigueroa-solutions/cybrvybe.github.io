@@ -54,7 +54,7 @@ const IndexPage = () => {
     <ContactLayout></ContactLayout>
   ];
   return (
-        
+    
     <main>
       <div className = "metaWrapper">
         <Sidebar nav_list = {array["nav_list"]} social_list = {array["social_links"]} panel_list = {tab_panels}></Sidebar>

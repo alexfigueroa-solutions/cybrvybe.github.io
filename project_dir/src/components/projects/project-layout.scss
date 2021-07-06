@@ -24,7 +24,8 @@
 .projectLayoutWrapper{
   
     overflow-y:scroll;
-    height: 45rem;
+    height: 100%;
+    position: fixed;
     width: 67.75rem;
     
     
@@ -81,7 +82,7 @@
     .projectLayoutWrapper{
         max-width: 700px;
         width: 100%;
-        
+        position:relative;
         top: 0rem;
         margin-top: 15rem;
         bottom: 0rem;

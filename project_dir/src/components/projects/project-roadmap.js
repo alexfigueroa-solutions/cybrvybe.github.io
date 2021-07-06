@@ -15,6 +15,9 @@ export default class ProjectRoadmap extends React.Component{
                        roadmap_item => (
                            <div className = "timelineItem">
                                <div className = "timelineItemContent">
+                                   <div className = "roadmapItemIconDiv">
+                                        <span class="iconify" icon={roadmap_item["status_icon"]} data-inline="false"></span>
+                                    </div>
                                     <h3 className = "timelineItemTitle">
                                         {roadmap_item["title"]}
                                     </h3>

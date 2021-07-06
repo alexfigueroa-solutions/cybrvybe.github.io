@@ -16,15 +16,20 @@
 }
 .traitIcon{
     text-align: center;
-    font-size: 2rem;
+    
+  
 }
 .traitTitle{
     align-items: center;
+    
+    
 }
 .traitIconDiv{
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
+    font-size: 3rem;
+    color: $darkestwhite;
     justify-content: center;
 }
 .traitContainer{
@@ -32,7 +37,7 @@
     padding: 1.5rem;
     box-shadow: 0.5rem 0.5rem 1rem 0rem rgb(0,0,0), -0.5rem -0.5rem 1rem 0rem $darkerblack;
     width: 10rem;
-    border-radius: 10%;;
+   
     height: 13.5rem;
     display: flex;
     flex-flow: column nowrap;
@@ -47,12 +52,18 @@
     .traitDescription{
         color: $darkerblack;
     }
+    .traitTitle{
+        color: $darkerblack;
+    }
+    .traitIcon{
+        color: $darkerblack;
+    }
 }
 .traitDescription{
     align-items: center;
     height: 10rem;
     width: 100%;
-    color: $primarydull;
+    color: $darkestwhite;
 }
 
 

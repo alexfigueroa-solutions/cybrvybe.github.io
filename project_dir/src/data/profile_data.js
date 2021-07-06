@@ -1,5 +1,6 @@
-import { faBrain, faBriefcase, faChartLine, faCog, faDatabase, faHandsHelping, faIcons, faLightbulb, faMale, faMarker, faMicrochip, faObjectGroup, faProjectDiagram, faPuzzlePiece, faQuestion, faQuestionCircle, faStreetView } from "@fortawesome/free-solid-svg-icons";
+import { faBrain, faBriefcase, faChartLine, faCode, faCog, faDatabase, faHandsHelping, faIcons, faLightbulb, faMale, faMarker, faMicrochip, faObjectGroup, faProjectDiagram, faPuzzlePiece, faQuestion, faQuestionCircle, faRandom, faStreetView } from "@fortawesome/free-solid-svg-icons";
 import { faFigma, faGit, faGithub, faPython, faReact, faRProject, faSass} from "@fortawesome/free-brands-svg-icons";
+import { action_icons, logos_dict } from "./icons/icons";
 const diagnostics = [
     {
         prompt: "First Name",
@@ -24,98 +25,138 @@ const diagnostics = [
 ];
 const traits_list = [
     {
-        title: "Growth Mindset",
-        icon: faBrain,
+        title: "Entrepreneur",
+        icon: "emojione-v1:light-bulb",
         description: "Anything is achievable as long as you take initiative and follow-through on mastering the prerequisite skills."
     },
     {
-        title: "Entrepreneurial",
-        icon: faLightbulb,
+        title: "Developer/Engineer",
+        icon: "emojione:laptop-computer",
         description: "Always working out my idea muscle by constantly thinking of products and solutions to problems."
     },
     {
-        title: "Lifelong Learner",
-        icon: faStreetView,
+        title: "Analyst",
+        icon: "emojione:chart-increasing",
         description: "Always learning more and diving deep - and always have been."
     },
     {
-        title: "Excellence-Oriented",
-        icon: faBriefcase,
+        title: "Polymath",
+        icon: "dashicons:randomize",
         description: "When I seek out to do something, I seek out to execute it with mastery and excellence."
     }
 ];
  const tech_list = [
     {
         title: "Python",
-        icon: faPython
+        icon: logos_dict["python"]
     },
     {
         title: "Django",
-        icon: faCog
+        icon: logos_dict["django"]
     },
     {
         title: "React",
-        icon: faReact
+        icon: logos_dict["react"]
     },
     {
         title: "Gatsby",
-        icon: faCog
+        icon: logos_dict["gatsby"]
     },
     {
         title: "SASS/SCSS",
-        icon: faSass
+        icon: logos_dict["sass"]
+    },
+    {
+        title: "HTML",
+        icon: logos_dict["html"]
+    },
+    {
+        title: "CSS",
+        icon: logos_dict["css"]
     },
     {
         title: "Selenium",
-        icon: faCog
+        icon: logos_dict["selenium"]
     },
     {
         title: "Javascript",
-        icon: faCog
+        icon: logos_dict["javascript"]
     },
     {
         title: "Neo4j",
-        icon: faCog
+        icon: logos_dict["neo4j"]
     },
     {
         title: "Postgres",
-        icon: faDatabase
+        icon: logos_dict["postgres"]
     },
     {
-        title: "SQL",
-        icon: faCog
+        title: "SQLite",
+        icon: logos_dict["sqlite"]
     },
     {
         title: "R",
-        icon: faRProject
+        icon: logos_dict["r"]
     },
     {
         title: "Pandas",
-        icon: faCog
+        icon: logos_dict["pandas"]
+    },
+    {
+        title: "D3.js",
+        icon: logos_dict["d3"]
     },
     {
         title: "Git",
-        icon: faGit
+        icon: logos_dict["git"]
     },
     {
         title: "Github",
-        icon: faGithub
+        icon: logos_dict["github"]
     },
     {
         title: "BS4",
-        icon: faCog
+        icon: logos_dict["blank"]
     },
     {
         title: "Django REST Framework",
-        icon: faCog
+        icon: logos_dict["django"]
     },
     {
         title: "Matplotlib",
-        icon: faCog
+        icon: logos_dict["blank"]
+    },
+    {
+        title: "Java",
+        icon: logos_dict["java"]
     },
     {
         title: "Figma",
-        icon: faFigma
+        icon: logos_dict["figma"]
+    },
+    {
+        title: "Adobe XD",
+        icon: logos_dict["adobe_xd"]
+    },
+    {
+        title: "Excel",
+        icon: logos_dict["excel"]
+    },
+    {
+        title: "JSON",
+        icon: logos_dict["json"]
+    },
+    {
+        title: "Stripe",
+        icon: logos_dict["stripe"]
+    },
+    {
+        title: "VSCode",
+        icon: logos_dict["vscode"]
+    },
+    {
+        title: "PyCharm",
+        icon: logos_dict["pycharm"]
     }
     
 ];
@@ -131,47 +172,56 @@ const skills_nav_tab_labels = [
 ];
 const technical_skills_list = [
     {
-        title: "Component-based front-end development.",
-        icon: faPuzzlePiece
+        title: "Use a component-based front-end development workflow to improve efficiency and reusability.",
+        icon: action_icons["puzzle_piece"]
     },
     {
-        title: "Handling of entire software development lifecycle.",
-        icon: faHandsHelping
+        title: "Able to handle an entire software development lifecycle: from identifying requirements and tools, to live deployment.",
+        icon: action_icons["rocket"]
     },
     {
-        title: "Data Modeling",
-        icon: faObjectGroup
+        title: "Use of data modeling to create digital structures of objects and/or systems, to better understand them and/or apply algorithms/automation to.",
+        icon: action_icons["data_class"]
     },
     {
         title: "Using Object Relational Mapping (ORM) to populate the database schema.",
-        icon: faDatabase
+        icon: action_icons["form"]
     },
     {
-        title: "Creating REST APIs",
-        icon: faDatabase
+        title: "Use data cleaning/ETL techniques to prepare data in a consistent manner.",
+        icon: action_icons["broom"]
     },
     {
-        title: "Fetch data from REST API",
-        icon: faDatabase
+        title: "Create REST APIs to enable communication between a decoupled front-end and back-end.",
+        icon: action_icons["plug"]
+    },
+    {
+        title: "Fetch data from REST APIs",
+        icon: action_icons["pull_data"]
     }
 ];
 const business_skills_list = [
     {
-        title: "Creation/Extraction and management of project, product, business, and financial data.",
-        icon: faProjectDiagram
+        title: "Create, extract, and manage project, product, business, and financial data.",
+        icon: action_icons["pull_data"]
     },
     {
-        title: "Handle To-Market Lifecycle",
-        icon: faMarker
+        title: "Familiar with processes of to-market lifecycles in business.",
+        icon: action_icons["market"]
     },
     {
-        title: "Gathering Client Requirements",
-        icon: faMale
+        title: "Able to gather client requirements and translate them into technical requirements.",
+        icon: action_icons["conversation"]
     }, 
+    {
+        title: "Identify and master skills pertaining to a particular problem or interest, relatively quickly.",
+        icon: action_icons["books"]
+    },
     { 
         title: "SAAS Metrics Handling and Analysis",
-        icon: faChartLine
+        icon: action_icons["data_scientist"]
     }
+
 ];
 
 

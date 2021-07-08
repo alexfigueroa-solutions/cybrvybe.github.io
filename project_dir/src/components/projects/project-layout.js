@@ -22,9 +22,6 @@ export default class ProjectLayout extends React.Component{
                         <a className = "iconLink" href = {project_dict["repo_link"]}>
                             <FontAwesomeIcon icon = {faGithub} className = "githubButton"></FontAwesomeIcon>
                         </a>
-                        <a className = "iconLink" href = {project_dict["repo_link"]}>
-                            <FontAwesomeIcon icon = {faExternalLinkAlt} className = "projectLinkButton"></FontAwesomeIcon>
-                        </a>
                         
                         </div>  
                 </div>

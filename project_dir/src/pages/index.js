@@ -23,7 +23,8 @@ const IndexPage = () => {
     <ProjectTabPanelLayout project_dict = {project_list[1]}></ProjectTabPanelLayout>,
     <ProjectTabPanelLayout project_dict = {project_list[2]}></ProjectTabPanelLayout>,
     <ProjectTabPanelLayout project_dict = {project_list[3]}></ProjectTabPanelLayout>,
-    <ProjectTabPanelLayout project_dict = {project_list[4]}></ProjectTabPanelLayout>
+    <ProjectTabPanelLayout project_dict = {project_list[4]}></ProjectTabPanelLayout>,
+    <ProjectTabPanelLayout project_dict = {project_list[5]}></ProjectTabPanelLayout>
   ];
   const blog_tab_panels = [
     <BlogTabPanelLayout blog_post = {blog_list[0]}></BlogTabPanelLayout>,

@@ -83,7 +83,15 @@
     
     border-top: 0.1rem solid $darkblack;
     background-color: $darkestblack;
-    overflow: hidden; }
+    overflow-x: scroll; 
+    padding-left: 0rem;
+    margin-left: 0rem;
+    left: 0rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    
+  }
   .carousel .thumbs {
     -webkit-transition: all 0.15s ease-in;
     -moz-transition: all 0.15s ease-in;

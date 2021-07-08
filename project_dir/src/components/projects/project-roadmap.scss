@@ -39,8 +39,23 @@
     text-shadow: 0rem 0rem 1rem $normalprimary;
 
 }
-.roadmapItemIconDiv{
-    font-size: 4rem;
+.roadmapIconDiv{
+    font-size: 2rem;
+    padding-left: 1rem;
+    color: $normalprimary;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
+.roadmapIconLabel{
+    font-size: 0.6rem;
+    color: $darkestwhite;
+    padding: 0rem;
+    margin: 0rem 0rem;
+    text-align: center;
 }
 .timelineItemContent{
     box-shadow: 0.5rem 0.5rem 1rem 0rem $darkestblack, -0.5rem -0.5rem 1rem 0rem $darkblack;

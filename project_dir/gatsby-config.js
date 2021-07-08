@@ -1,4 +1,7 @@
 module.exports = {
+
+  pathPrefix: "/cybrvybe.github.io",
+  
   siteMetadata: {
     title: "portfolio-two",
   },

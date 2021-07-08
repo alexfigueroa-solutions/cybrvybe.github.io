@@ -12,7 +12,8 @@
     "start": "gatsby develop -H 192.168.1.149 -p 8000",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@brainhubeu/react-carousel": "^2.0.4",
@@ -39,6 +40,7 @@
     "gatsby-plugin-sitemap": "^4.2.0",
     "gatsby-source-filesystem": "^3.8.0",
     "gatsby-transformer-sharp": "^3.8.0",
+    "gh-pages": "^3.2.3",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",

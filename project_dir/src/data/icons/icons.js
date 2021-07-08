@@ -43,7 +43,9 @@ export const logos_dict = {
     pycharm: "logos:pycharm",
     d3: "logos:d3",
     chart_js: "file-icons:chartjs",
-    aws_lambda: "logos:aws-lambda"
+    aws_lambda: "logos:aws-lambda",
+    heroku: "logos:heroku-icon",
+    npm: "logos:npm-icon"
 }
 export const action_icons = {
     broom: "eos-icons:cleanup",
@@ -61,7 +63,13 @@ export const action_icons = {
 }
 export const status_icons = {
     done: {
-        icon: "emojione:ballot-box-with-check",
+        icon: "bi:check-circle-fill",
         title: "done"
+    },
+    not_done: {
+        icon: "heroicons-solid:x-circle"
+    },
+    in_progress: {
+        icon: "bx:bxs-time-five"
     }
 }

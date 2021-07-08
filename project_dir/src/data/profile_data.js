@@ -27,12 +27,12 @@ const traits_list = [
     {
         title: "Entrepreneur",
         icon: "emojione-v1:light-bulb",
-        description: "Anything is achievable as long as you take initiative and follow-through on mastering the prerequisite skills."
+        description: "Always working out my idea muscle by constantly thinking of products and solutions to problems."
     },
     {
         title: "Developer/Engineer",
         icon: "emojione:laptop-computer",
-        description: "Always working out my idea muscle by constantly thinking of products and solutions to problems."
+        description: "I implement technical solutions to business problems. Specifically, web developement, automation, and data science."
     },
     {
         title: "Analyst",

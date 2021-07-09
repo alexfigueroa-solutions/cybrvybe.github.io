@@ -1,9 +1,11 @@
 module.exports = {
 
-  pathPrefix: "/cybrvybe.github.io",
+  pathPrefix: "/",
   
   siteMetadata: {
     title: "portfolio-two",
+    siteUrl: `https://cybrvybe.github.io/`,
+    
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",

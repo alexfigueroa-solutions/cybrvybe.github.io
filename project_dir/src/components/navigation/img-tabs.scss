@@ -4,8 +4,8 @@
 .tabSection{
     display: flex;
     flex-flow: row nowrap;
-    height: 44.23rem;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     background-color: $darkerblack;
 
 }
@@ -32,13 +32,16 @@
     padding-right: 0rem;
     overflow-x:hidden;
     overflow-y: scroll;
-    justify-content: space-evenly;
-    height: 44.23rem;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: $darkestblack;
     
 }
 .tab{
-    height:12.5rem;
+    height:8.5rem;
     width: 12.5rem;
+    min-height:8.5rem;
+    min-width: 12.5rem;
     padding-left: 0rem;
     padding-top: 0rem;
     margin: 0rem 0rem 0rem 0rem;
@@ -54,6 +57,7 @@
     align-items: center;
     align-content: center;
     font-weight: 900;
+   
     
     
 

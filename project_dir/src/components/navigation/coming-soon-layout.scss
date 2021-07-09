@@ -14,11 +14,11 @@
     text-align:center;
 }
 .comingSoonLayoutWrapper{
-    width: 67.75rem;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    height: 45rem;
+    height: 100vh;
     background-image: url("./black_abstract.jpg");
     background-size: cover;
     
@@ -42,8 +42,8 @@
 
 @media screen and (max-width: 700px){
     .comingSoonLayoutWrapper{
-        width: 22.5rem;
-        height: 24rem;
+        width: 100vh;
+        height: 100vh;
         padding:0.5rem;
         margin-top: 12rem;
         overflow-y: scroll;

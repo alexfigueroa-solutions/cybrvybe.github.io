@@ -8,12 +8,14 @@ export default class ProfileLayout extends React.Component{
     render(){
         
         return(
-            <div className = "profileLayoutWrapper">
-                <ProfileIntroContainer></ProfileIntroContainer>
-                <ProfileTechContainer tech_list = {dict["tech_list"]}></ProfileTechContainer>
-                <ProfileSkillsContainer></ProfileSkillsContainer>
-                
-                
+            <div className = "profileLayoutWrapperWrapper">
+                <div className = "profileLayoutWrapper">
+                    <ProfileIntroContainer></ProfileIntroContainer>
+                    <ProfileTechContainer tech_list = {dict["tech_list"]}></ProfileTechContainer>
+                    <ProfileSkillsContainer></ProfileSkillsContainer>
+                    
+                    
+                </div>
             </div>
         )
     }

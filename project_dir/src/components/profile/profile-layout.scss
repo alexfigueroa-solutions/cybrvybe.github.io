@@ -1,17 +1,25 @@
 @import "../abstract/color";
 
+.profileLayoutWrapperWrapper{
+    display: flex;
+    flex-flow: row nowrap;
+}
 .profileLayoutWrapper{
     overflow-y:scroll;
     height: 100%;
     position: fixed;
-    
-    
+    width: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
 }
 @media screen and (max-width: 700px){
     .profileLayoutWrapper{
-        height: 37rem;
+        height: 100vh;
         position: relative;
         margin-bottom: 0rem;
+        overflow-y: none;
         
    
         

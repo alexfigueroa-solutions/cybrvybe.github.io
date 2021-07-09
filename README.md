@@ -1,4 +1,6 @@
 #Software Engineering Portfolio
+# Description
+This is a static web development portfolio created with Gatsby. It contains profile, projects, services, blog, and startups pages. 
 
 # UI
 
@@ -6,8 +8,6 @@
 ![Web 1920 – 1](https://user-images.githubusercontent.com/58280353/119933708-78766c00-bf39-11eb-803e-e62c941fd4e2.png)
 
 ## Actual UI
-### Mobile View
-![mobile_view_profile](https://user-images.githubusercontent.com/58280353/125136198-30fa0880-e0bf-11eb-869e-071851cc5e10.png)
 
 ### Desktop View
 ![portfolio_two_coming_soon_page](https://user-images.githubusercontent.com/58280353/125136367-8c2bfb00-e0bf-11eb-9b91-51790fbee40a.PNG)
@@ -19,6 +19,10 @@
 ![portfolio_two_project_page](https://user-images.githubusercontent.com/58280353/125136411-9fd76180-e0bf-11eb-8704-37ced726cb03.PNG)
 
 ![projects_page](https://user-images.githubusercontent.com/58280353/125136412-a06ff800-e0bf-11eb-84e0-61945c50a4ec.PNG)
+
+### Mobile View
+![mobile_view_profile](https://user-images.githubusercontent.com/58280353/125136198-30fa0880-e0bf-11eb-869e-071851cc5e10.png)
+
 
 
 

@@ -32,17 +32,17 @@ const traits_list = [
     {
         title: "Developer/Engineer",
         icon: "emojione:laptop-computer",
-        description: "I implement technical solutions to business problems. Specifically, web developement, automation, and data science."
+        description: "I implement technical solutions to business problems, and have a passion for simplifying complexity."
     },
     {
         title: "Analyst",
         icon: "emojione:chart-increasing",
-        description: "Always learning more and diving deep - and always have been."
+        description: "I work to optimize and automate the extraction of value from the world's most valuable asset - data."
     },
     {
         title: "Polymath",
         icon: "dashicons:randomize",
-        description: "When I seek out to do something, I seek out to execute it with mastery and excellence."
+        description: "I love to master and understand various skills and topics."
     }
 ];
  const tech_list = [

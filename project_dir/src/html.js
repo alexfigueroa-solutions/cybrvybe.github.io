@@ -11,9 +11,10 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        
         {props.headComponents}
       </head>
+      <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <div

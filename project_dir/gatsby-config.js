@@ -1,16 +1,23 @@
 module.exports = {
 
   pathPrefix: "/",
-  
+  flags: {
+    THE_FLAG: false
+  },
   siteMetadata: {
     title: "portfolio-two",
-    siteUrl: `https://cybrvybe.github.io/`,
+    siteUrl: `https://cybrvybe.github.io/`
     
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("node-sass"),
+      },
+    },
     "gatsby-plugin-image",
-    "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
@@ -45,9 +52,6 @@ module.exports = {
         endpoint: "https://gmail.us6.list-manage.com/subscribe/post?u=cab5323e0840ac15cbc21da54&amp;id=12af27c85f"
       }
     },
-    
-
-    
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     'three'

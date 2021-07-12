@@ -1,13 +1,14 @@
+
 @import "../abstract/color";
 @import "../abstract/fonts";
 .blogPageWrapper{
     line-height: 2rem;
-    width: 80vh;
+    width:100%;
 }
 .blogPageTitleDiv{
     font-size: 3rem;
     text-align: center;
-    width: 80vh;
+   
     line-height: 4rem;
     font-family: Fyodor;
     text-shadow: 0rem 0rem 1rem $normalprimary;

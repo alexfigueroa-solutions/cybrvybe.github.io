@@ -4,23 +4,28 @@ import {faGithub, faLinkedin, faMedium} from "@fortawesome/free-brands-svg-icons
 const nav_list = [
     {
         icon_class: faUser,
-        title: "Profile"
+        title: "Profile",
+        link: "/profile"
     },
     {
         icon_class: faProjectDiagram,
-        title: "Projects"
+        title: "Projects",
+        link: "/projects"
     },
     {
         icon_class: faCode,
-        title: "Services"
+        title: "Services",
+        link: "/services"
     },
     {
         icon_class: faBlog,
-        title: "Blog"
+        title: "Blog",
+        link: "/blog"
     },
     {
         icon_class: faRocket,
-        title: "Startups"
+        title: "Startups",
+        link: "/startups"
     }
   ];
   const social_links = [

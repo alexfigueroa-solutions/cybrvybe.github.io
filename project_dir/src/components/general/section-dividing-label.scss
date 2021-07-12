@@ -1,4 +1,5 @@
-@import "../abstract/color";
+@import "../abstract/_color.scss";
+@import "../abstract/_fonts.scss";
 
 .dividingLabelDiv{
     display: flex;
@@ -7,9 +8,10 @@
     padding-top:0rem;
     margin-top:0rem;
     margin-bottom:0rem;
+    z-indeX: 0;
 }
 .dividingLabelText{
-    font-family: DigitalFont;
+    font-family: Fyodor;
     font-size: 4rem;
     color: $primarydull;
     margin-bottom:0rem;
@@ -25,7 +27,7 @@
 @media screen and (max-width: 700px){
     .dividingLabelText{
         font-size: 2rem;
-        font-family: Fyodor;
+     
         margin-left: 1rem;
         text-shadow: 0rem 0rem 1rem $normalprimary;
     }

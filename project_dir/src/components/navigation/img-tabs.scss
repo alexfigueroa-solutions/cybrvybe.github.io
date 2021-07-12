@@ -5,15 +5,16 @@
     display: flex;
     flex-flow: row nowrap;
     height: 100vh;
-    position: fixed;
+    width: 175vh;
     background-color: $darkerblack;
+
 
 }
 .panelWrapper{
     background-color: $darkerblack;
     margin-right: 0rem;
     position: relative;
-    width: 65rem;
+    width: 100%;
 
 }
 .panelDiv{
@@ -83,7 +84,7 @@
 
 }
 .projectTitleDiv{
-    background-color: rgb(5,5,5,0.45);
+    background-color: rgba(5,5,5,0.45);
     padding: 0.5rem;
     width: 100%;
     height: 100%;

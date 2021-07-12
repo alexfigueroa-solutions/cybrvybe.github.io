@@ -60,7 +60,7 @@
 .timelineItemContent{
     box-shadow: 0.5rem 0.5rem 1rem 0rem $darkestblack, -0.5rem -0.5rem 1rem 0rem $darkblack;
     
-    border: 0.1rem solid rgb(5,5,5,0);
+    border: 0.1rem solid rgba(5,5,5,0);
     background-color: $darkerblack;
     display: flex;
     flex-direction: row;

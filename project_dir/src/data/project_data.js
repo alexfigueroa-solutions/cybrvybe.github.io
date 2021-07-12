@@ -290,7 +290,7 @@ const project_list = [
                 status: "in progress"
             }
         ],
-        repo_link: "https://github.com/cybrvybe/BeatCommerce",
+        repo_link: "https://github.com/cybrvybe/BeatCommerce-Advanced",
         description: "The BeatCommerce platform is an e-commerce store for music producers.",
         stack: [
             {

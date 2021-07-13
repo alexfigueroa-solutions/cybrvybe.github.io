@@ -16,7 +16,7 @@ export default class PersonalDiagnosticsContainer extends React.Component{
                             diagnostic => (
                                 <div>
                                    
-                                    <AnimatedTyper prompt = {diagnostic.prompt + ": " + diagnostic.answer} font = "Digitatron" font_size = "0.7"></AnimatedTyper>
+                                    <AnimatedTyper prompt = {diagnostic.prompt + ": " + diagnostic.answer} font = "Digitatron" font_size = "0.8"></AnimatedTyper>
                                    
                                 </div>
                             )

@@ -52,9 +52,10 @@ export default class Sidebar extends React.Component{
                                     <Image src = "profile_pic.jpg" alt = {""} className = "profilePic"></Image>
                                     <h3 className = "name">Alejandro Figueroa</h3>
                                     <TextChanger text_array = {array["interests_list"]}></TextChanger>
+                                    <ResumeDownloadBtn></ResumeDownloadBtn>
                                 </div>
                             </div>
-                            <ResumeDownloadBtn></ResumeDownloadBtn>
+                            
                             <div className = "socialWrapper">
                                 {
                                     social_list.map(

@@ -1,5 +1,5 @@
 import React from 'react';
-import "../animated/animated-typer.scss";
+import "./text-changer.scss";
 const { Component } = React; 
 class TextChanger extends Component{
     constructor(){

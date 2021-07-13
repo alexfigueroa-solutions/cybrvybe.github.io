@@ -1,8 +1,11 @@
 @import "../abstract/color";
-
+@import "../abstract/fonts";
 .profileLayoutWrapperWrapper{
     display: flex;
     flex-flow: row nowrap;
+ 
+    
+
 }
 .profileLayoutWrapper{
     overflow-y:scroll;

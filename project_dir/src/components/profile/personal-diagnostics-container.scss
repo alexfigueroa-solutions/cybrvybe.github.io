@@ -6,10 +6,35 @@
     z-index: 0;
     background-color: $darkestblack;
     min-width: 21rem;
+    max-width: 21rem;
     padding: 0.5rem;
-    align-items: center;
+    align-items: flex-start;
     height: auto;
+    line-height: 100%;
+    animation: diagnosticsContainerAnimationRev 0.25s;
     
+}
+.diagnosticsContainer:hover{
+    line-height: 150%;
+   
+    animation: diagnosticsContainerAnimation 0.5s;
+}
+@keyframes diagnosticsContainerAnimation{
+    0%{
+        line-height: 100%;
+
+    }
+    100%{
+        line-height: 150%;
+    }
+}
+@keyframes diagnosticsContainerAnimationRev{
+    0%{
+        line-height: 150%;
+    }
+    100%{
+        line-height: 100%;
+    }
 }
 
 .diagnosticsDisplay{

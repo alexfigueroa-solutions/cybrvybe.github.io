@@ -9,10 +9,12 @@
 }
 .mainMainWrapper{
     z-index: 20;
+
 }
 .name{
     font-family: Digitatron;
     color: $normalprimary;
+    padding-bottom: 0rem;
     text-shadow: 0rem 0rem 1rem $primarydull;
 }
 .sidebarWrapper{
@@ -115,7 +117,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 13rem;
-    height: auto;
+    grid-gap: 0rem;
     
 }
 

@@ -9,7 +9,7 @@ export default class ComingSoonLayout extends React.Component{
         return(
             <div className = "comingSoonLayoutWrapper">
                 <div className = "animatedComingSoonTyperDiv">
-                    <AnimatedTyper prompt = "Coming Soon" font = "EastLift" font_size = {"4"} className = "animatedComingSoonTyper">
+                    <AnimatedTyper prompt = "Coming Soon" font = "CarbonBl" font_size = {"6"} className = "animatedComingSoonTyper">
 
                     </AnimatedTyper>
                 </div>

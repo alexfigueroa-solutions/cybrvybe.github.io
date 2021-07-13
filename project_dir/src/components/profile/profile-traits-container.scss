@@ -4,13 +4,14 @@
     display: flex;
     flex-flow: row nowrap;
     padding: 0.5rem;
+   
     background-color: $darkestblack;
     grid-gap: 1rem;
     height:auto;
     
-    width: auto;
+    width: 125vh;
     
-    max-width:55rem;
+
     justify-content: start;
     text-align: center;
 }
@@ -21,7 +22,7 @@
 }
 .traitTitle{
     align-items: center;
-    
+    font-size: 1.25rem;
     
 }
 .traitIconDiv{
@@ -34,11 +35,11 @@
 }
 .traitContainer{
     background-color: $darkerblack;
-    padding: 1.5rem;
+    padding: 0.5rem 1.5rem;
     box-shadow: 0.5rem 0.5rem 1rem 0rem rgb(0,0,0), -0.5rem -0.5rem 1rem 0rem $darkerblack;
-    width: 10rem;
+    width: 10.5rem;
 
-    height: 13.5rem;
+    height: auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content:flex-start;
@@ -63,6 +64,7 @@
     align-items: center;
     height: 10rem;
     width: 100%;
+    font-size: 1rem;
     color: $darkestwhite;
 }
 

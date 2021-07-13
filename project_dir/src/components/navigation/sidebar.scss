@@ -9,6 +9,7 @@
 }
 .mainMainWrapper{
     z-index: 20;
+    max-height: 100vh;
 
 }
 .name{
@@ -21,7 +22,7 @@
     background-color: $darkerblack;
     position: sticky;
     left: 0rem;
-    height: 100vh;
+    max-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;

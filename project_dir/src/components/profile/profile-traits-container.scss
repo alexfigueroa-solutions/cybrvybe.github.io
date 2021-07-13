@@ -33,32 +33,108 @@
     color: $darkestwhite;
     justify-content: center;
 }
+
+@keyframes traitContainerTraitDescriptionHover{
+    0%{
+        opacity: 0%;
+        transform: scale(0%);
+    }
+    100%{
+        opacity: 100%;
+        transform: scale(100%);
+    }
+}
+@keyframes traitContainerTraitTitleHover{
+    0%{
+        transform: scale(0%);
+ 
+        opacity: 0%;
+        
+       
+    }
+    100%{
+        transform: scale(100%);
+      
+        opacity: 100%;
+     
+    }
+}
+@keyframes traitContainerHover{
+    0%{
+        transform: scale(120%);
+        border: 0.1rem solid rgba(0, 0, 0, 0);    
+     
+        background-color: $darkerblack;
+    }
+    100%{
+        transform: scale(100%);
+        
+        background-color: $darkblack;
+    }
+}
+@keyframes traitContainerHoverRev{
+    0%{
+        transform: scale(0%);
+        background-color: $darkerblack;
+        border: 0.1rem solid $normalprimary;    
+    
+    }
+    100%{
+        transform: scale(100%);
+        background-color: $darkerblack;
+        border: 0.1rem solid rgba(0, 0, 0, 0);    
+     
+    }
+}
 .traitContainer{
     background-color: $darkerblack;
     padding: 0.5rem 1.5rem;
     box-shadow: 0.5rem 0.5rem 1rem 0rem rgb(0,0,0), -0.5rem -0.5rem 1rem 0rem $darkerblack;
     width: 10.5rem;
-
+    animation: traitContainerHoverRev 0.3s;
     height: auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content:flex-start;
     text-align: center;
-  
+    transition: all 0.3s ease-in;
+    border: 0.1rem solid rgba(0, 0, 0, 0);    
+        
     
 }
 .traitContainer:hover{
-    background-color: $primarydull;
+    background-color: $darkblack;
     color: $darkestblack;
+    transition: all 0.3s ease-in;
+    border: 0.1rem solid $normalprimary;    
+    animation: traitContainerHover 0.5s;
     .traitDescription{
-        color: $darkerblack;
+     
+        animation: traitContainerTraitDescriptionHover 0.4s;
     }
     .traitTitle{
-        color: $darkerblack;
+        color: $normalprimary;
+        content: "";
+        
+        transition: all 0.15s ease-in-out;
+        animation: traitContainerTraitTitleHover 0.3s;
     }
     .traitIcon{
-        color: $darkerblack;
+    
+        animation: traitContainerTraitDescriptionHover 0.3s;
+ 
     }
+}
+.traitTitle::after{
+    position:absolute;
+    position: absolute;
+	content: "";
+	width: 0%;
+	height: 4px;
+	background-color: whitesmoke;
+	left: 50%;
+	bottom: -10px;
+	transition: all 0.4s ease-in-out;
 }
 .traitDescription{
     align-items: center;

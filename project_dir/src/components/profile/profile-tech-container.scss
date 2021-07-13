@@ -1,5 +1,5 @@
 @import "../abstract/color";
-
+@import "./profile-traits-container.scss";
 .profileTechContainer{
     
     display: grid;
@@ -79,12 +79,13 @@
     letter-spacing: 0.25rem;
     justify-content: space-evenly;
     min-width: 5rem;
-
-    animation: techEntryContainerHover 1s reverse;
+    transition: ease-in-out 0.3s;
+    animation: traitContainerHoverRev 0.6s;
 }
 .techEntryContainer:hover{
-   
-    animation: techEntryContainerHover 0.5s;
+    transition: ease-in-out 0.3s;
+    
+    animation: traitContainerHover 0.3s;
     color: $normalprimary;
     box-shadow: 0rem 0rem 1rem 0rem $primarydull;
     border: 0.1rem solid $normalprimary;

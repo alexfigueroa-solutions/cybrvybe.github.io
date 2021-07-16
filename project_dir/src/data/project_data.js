@@ -15,7 +15,9 @@ import au7oma7a_bi_pic_2 from "../images/projects/income-expense-allocation.png"
 import portfolio_one_pic_1 from "../images/projects/portfolio_one_projects_page.png";
 import portfolio_one_pic_2 from "../images/projects/portfolio_one_capabilities_page.png";
 import neohacker_pic_1 from "../images/projects/preview_2.png";
-
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false
 
 const project_list = [
     {

@@ -1,6 +1,6 @@
 import { faBrain, faBriefcase, faChartLine, faCode, faCog, faDatabase, faHandsHelping, faIcons, faLightbulb, faMale, faMarker, faMicrochip, faObjectGroup, faProjectDiagram, faPuzzlePiece, faQuestion, faQuestionCircle, faRandom, faStreetView } from "@fortawesome/free-solid-svg-icons";
 import { faFigma, faGit, faGithub, faPython, faReact, faRProject, faSass} from "@fortawesome/free-brands-svg-icons";
-import { action_icons, logos_dict } from "./icons/icons";
+import { action_icons, logos_dict, status_icons } from "./icons/icons";
 const diagnostics = [
     {
         prompt: "First Name",
@@ -223,6 +223,63 @@ const business_skills_list = [
     }
 
 ];
+const technical_development_roadmap = [
+    {
+        title: "Self-taught mathematics and sciences since kindergarten, to satisfy my curiosity.",
+        status_icon: status_icons.done.icon,
+        status: "done"
+    },
+    {
+        title: "Developed a strong interest for predictive dynamical systems, while self-teaching vector calculus and calc-based physics and statistics in high school.",
+        status_icon: status_icons.done.icon,
+        status: "done"
+    },
+    {
+        title: "Began asking the question 'Can complex systems be predicted? How?', while exploring concepts in graph theory, networks, and complexity, in high school.",
+        status_icon: status_icons.done.icon,
+        status: "done"
+    },
+    {
+        title: "Self-taught data science, in R and Python, at UCSB with the intention of using it to develop a programmable method to predict complex systems.",
+        status_icon: status_icons.done.icon,
+        status: "done"
+    },
+    {
+        title: "Dropped out to pursue the development of this method, as well as a surrounding business and line of technology products.",
+        status_icon: status_icons.done.icon,
+        status: "done"
+    },
+    {
+        title: "Expanded on idea to predict complex systems. I'd realized that an ancillary benefit of predicting complex systems using this method, is that it lays the foundation and wiring for an AGI to emerge from use over time. Developed a comprehensive roadmap to get there.",
+        status_icon: status_icons.done.icon,
+        status: "done"
+    },
+    {
+        title: "Self-taught full-stack web development.",
+        status_icon: status_icons.done.icon,
+        status: "done"
+    },
+    {
+        title: "Doing work as a freelancer, for a music production client.",
+        status_icon: status_icons.in_progress.icon,
+        status: "in progress"
+    },
+    {
+        title: "Developing MVP for business intelligence platform.",
+        status_icon: status_icons.in_progress.icon,
+        status: "in progress"
+    },
+    {
+        title: "Developing various web applications, to monetize non-exclusively as productized services to businesses in music, real estate, photography/videography, animal breeding, SAAS, and architecture.",
+        status_icon: status_icons.in_progress.icon,
+        status: "in progress"
+    },
+    {
+        title: "More is planned...TBA",
+        status_icon: status_icons.in_progress.icon,
+        status: "in progress"
+    }
+]
 
 
 
@@ -232,6 +289,7 @@ const dict = {
     "tech_list": tech_list,
     "skills_nav_tab_labels": skills_nav_tab_labels,
     "technical_skills_list": technical_skills_list,
-    "business_skills_list": business_skills_list
+    "business_skills_list": business_skills_list,
+    "roadmap": technical_development_roadmap
 }
 export default dict;

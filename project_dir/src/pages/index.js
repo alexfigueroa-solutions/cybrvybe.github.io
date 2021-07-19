@@ -12,13 +12,15 @@ import ProjectTabPanelLayout from "../components/projects/project-tab-panel-layo
 import BlogTabPanelLayout from "../components/blogs/blog-tab-panel-layout";
 import blog_list from "../data/blog_data";
 import services_list from "../data/service_data";
+import { Link } from "gatsby";
 import ProfileLayout from "../components/profile/profile-layout";
 import startup_list from "../data/startup_data";
 import StartupTabPanelLayout from "../components/startups/startup-tab-panel-layout";
 // markup
+import SubscribeForm from "../components/general/subscribe-form";
 import ComingSoonLayout from "../components/navigation/coming-soon-layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPlusCircle, faSubscript } from "@fortawesome/free-solid-svg-icons";
 const IndexPage = () => {
   const profile_skills_tab_panel_list = [
     <ItemList items_list = {dict["technical_skills_list"]}></ItemList>,
@@ -31,14 +33,41 @@ const IndexPage = () => {
         <Sidebar nav_list = {array["nav_list"]} social_list = {array["social_links"]}></Sidebar>
         <div className = "landingWrapper">
           <div className = "landingDiv">
-            <AnimatedTyper prompt = "I Implement Technical Solutions to Business Problems" font = "CarbonBl" font-size = "7"></AnimatedTyper>
+            <div
+              data-sal = "slide-up"
+              data-sal-duration = "500"
+              data-sal-delay = "50"
+              data-sal-easing = "ease"
+              >
+              <AnimatedTyper 
+                
+                prompt = "I Implement Technical Solutions to Business Problems" font = "CarbonBl" font-size = "7"></AnimatedTyper>
+              
+            </div>
             <div className = "callToActionLandingWrapper">
-              <a  className = "callToActionLandingDiv" href = "mailto:alexfigueroa.cybr@gmail.com">
+              <a  
+                data-sal = "slide-right"
+                data-sal-duration = "500"
+                data-sal-delay = "50"
+                data-sal-easing = "ease"
+                className = "callToActionLandingDiv" href = "mailto:alexfigueroa.cybr@gmail.com">
                 <div className = "callToActionLandingIconDiv">
                   <FontAwesomeIcon className = "callToActionLandingIcon" icon = {faEnvelope}></FontAwesomeIcon>
                 </div>
                 <h3 className = "callToActionLandingText">Hire Me</h3>
               </a>
+              <Link to = "/subscribe"
+                data-sal = "slide-left"
+                data-sal-duration = "500"
+                data-sal-delay = "50"
+                data-sal-easing = "ease"
+                className = "callToActionLandingDivTwo">
+                <div className = "callToActionLandingIconDiv">
+                  <FontAwesomeIcon className = "callToActionLandingIcon" icon = {faPlusCircle}></FontAwesomeIcon>
+                </div>
+                <h3 className = "callToActionLandingText">Subscribe</h3>
+              </Link>
+              
             </div>
           </div>
         </div>

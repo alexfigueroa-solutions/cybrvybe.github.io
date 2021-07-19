@@ -48,7 +48,8 @@ export default class ProjectBreakdownTabs extends React.Component{
                                             entry["array"].map(
                                                 item => (
                                                     
-                                                    <div className = "breakdownItemDiv">
+                                                    <div 
+                                                        className = "breakdownItemDiv">
                                                         <div className = "breakdownItemBadgeContainer">
                                                             <BadgeItem status_dict = {item}></BadgeItem>
                                                         </div>

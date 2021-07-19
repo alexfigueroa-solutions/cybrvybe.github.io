@@ -19,7 +19,12 @@ export default class ItemList extends React.Component{
                                 
                                 items_list.map(
                                     item => (
-                                        <div className = "listItemDiv">
+                                        <div 
+                                            data-sal = "slide-up"
+                                            data-sal-duration = "500"
+                                            data-sal-delay = "0"
+                                            data-sal-easing = "ease" 
+                                            className = "listItemDiv">
                                             <div className = "listItemIconDiv">
                                                 <span class="iconify" data-icon={item.icon} data-inline="false"></span>
                                             </div>

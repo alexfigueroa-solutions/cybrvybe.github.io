@@ -11,7 +11,12 @@ export default class ProfileTraitsContainer extends React.Component{
                 {
                     traits_list.map(
                         trait => (
-                            <div className = "traitContainerWrapper">
+                            <div 
+                                data-sal = "slide-down"
+                                data-sal-duration = "500"
+                                data-sal-delay = "50"
+                                data-sal-easing = "ease"
+                                className = "traitContainerWrapper">
                                 <div className = "traitContainer">
                                     <div className = "traitIconDiv">
                                         <span className = "traitIcon" class="iconify" data-icon={trait.icon} data-inline="false"></span>   

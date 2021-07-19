@@ -1,6 +1,7 @@
 import React from "react";
 import "./img-tabs.scss";
-import { Tabs, TabPanel, TabList, Tab  } from "react-tabs";
+import { Tabs, TabPanel, TabList, Tab  } from "react-tabs"
+import { Link } from "gatsby";
 export default class ImgTabs extends React.Component{
     render(){
         const{
@@ -10,23 +11,26 @@ export default class ImgTabs extends React.Component{
 
         return(
             
-            <Tabs 
+            <div 
                 
              className = "tabSection">
                  <div className = "tabListWrapper">
-                    <TabList className = "tabList">
+                    <div className = "tabList">
                     
                         {
                             nav_array.map(
                                 nav_dict => (
                                     
-                                    <Tab className = "tab"
-                                        selectedClassName = "selectedTab"
+                                    <Link to = {nav_dict.path}
+                                        
+                                        activeClassName = "selectedTab"
+                                        className = "tab"
                                         style = {
                                             {
-                                                backgroundImage: "url(" + nav_dict['img_file'] + ")"
+                                                backgroundImage: "url(" + nav_dict['mockup'] + ")"
                                             }
-                                        }>
+                                        }
+                                    >
                                         <div className = "projectTitleDiv">
                                             <h3 className = "projectTitle">
                                                 {
@@ -36,13 +40,13 @@ export default class ImgTabs extends React.Component{
                                             
                                         </div>
                                         
-                                    </Tab>
+                                    </Link>
                                     
                                     
                                 )
                             )
                         }
-                    </TabList>
+                    </div>
                 </div>
                 <div className = "panelWrapper">
                     {
@@ -60,7 +64,7 @@ export default class ImgTabs extends React.Component{
                         )
                     }
                 </div>
-            </Tabs>
+            </div>
           
         )
     }

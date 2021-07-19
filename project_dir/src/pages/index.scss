@@ -34,6 +34,7 @@ html{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    grid-gap: 1rem;
 }
 .callToActionLandingDiv{
     display: flex;
@@ -41,9 +42,32 @@ html{
     justify-content: space-evenly;
     width: 10rem;
     border: 0.1rem solid $normalprimary;
-    border-radius: 500px;
+ 
     text-decoration: none;
     
+}
+.callToActionLandingDivTwo{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 10rem;
+    border: 0.1rem solid $darkestwhite;
+    text-decoration: none;
+    .callToActionLandingText{
+        color: $darkestwhite;
+    }
+    .callToActionLandingIcon{
+        color: $darkestwhite;
+    }
+}
+.callToActionLandingDivTwo:hover{
+    background-color: $darkestwhite;
+    .callToActionLandingIcon{
+        color: $darkestblack;
+    }
+    .callToActionLandingText{
+        color: $darkestblack;
+    }
 }
 .callToActionLandingDiv:hover{
     background-color: $normalprimary;

@@ -9,14 +9,21 @@ export default class ProfileTechContainer extends React.Component{
         } = this.props;
 
         return(
-            <div className = "wrapper">
+            <div 
+              
+                className = "wrapper">
                 <SectionDividingLabel label_name = "Technologies"></SectionDividingLabel>
                 <div className = "profileTechContainerWrapper">
                     <div className = "profileTechContainer">
                         {
                             tech_list.map(
                                 tech_entry => (
-                                    <div className = "techEntryContainer">
+                                    <div 
+                                        data-sal = "slide-up"
+                                        data-sal-duration = "500"
+                                        data-sal-delay = "0"
+                                        data-sal-easing = "ease" 
+                                        className = "techEntryContainer">
                                         <span className = "techIcon" class="iconify" data-icon= {tech_entry.icon}></span>
                                         <h3 className = "techEntryTitle">{tech_entry.title}</h3>
                                     </div>

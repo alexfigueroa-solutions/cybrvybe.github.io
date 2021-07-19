@@ -12,10 +12,10 @@
     border: 0.1rem solid $darkestblack;
 }
 .projectDetailMediaCarouselWrapper{
-    background-color: red;
+ 
 }
 .projectDetailMediaCarousel{
-    background-color: red;
+  
 
 }
 .projectDetailsProjectDescriptionContainerWrapper{
@@ -34,6 +34,11 @@
     }
     .projectDetailMediaCarousel{
         width: 100%;
+    }
+    .projectPageHeader{
+        display: flex;
+        flex-flow: column nowrap;
+        
     }
 }
 

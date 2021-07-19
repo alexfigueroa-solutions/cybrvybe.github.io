@@ -18,6 +18,7 @@ export default function ProjectsPage(){
     return <div className = "ImgTabMetaWrapper">
                 <Sidebar nav_list = {array["nav_list"]} social_list = {array["social_links"]}></Sidebar>
                 <ImgTabs nav_array = {project_list} tab_panels = {project_tab_panels}>hello</ImgTabs>
+                <ProjectTabPanelLayout project_dict = {project_list[0]}></ProjectTabPanelLayout>
 
             </div>
     };

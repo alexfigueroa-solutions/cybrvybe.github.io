@@ -1,7 +1,12 @@
-import {faBlog, faCode, faEnvelope, faPhone, faProjectDiagram, faRocket, faUser} from "@fortawesome/free-solid-svg-icons";
+import {faBlog, faCode, faEnvelope, faHome, faPhone, faProjectDiagram, faRocket, faUser} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin, faMedium} from "@fortawesome/free-brands-svg-icons";
 
 const nav_list = [
+    {
+        icon_class: faHome,
+        title: "Home",
+        link: "/"
+    },
     {
         icon_class: faUser,
         title: "Profile",
@@ -13,19 +18,9 @@ const nav_list = [
         link: "/projects"
     },
     {
-        icon_class: faCode,
-        title: "Services",
-        link: "/services"
-    },
-    {
         icon_class: faBlog,
         title: "Blog",
         link: "/blog"
-    },
-    {
-        icon_class: faRocket,
-        title: "Startups",
-        link: "/startups"
     }
   ];
   const social_links = [

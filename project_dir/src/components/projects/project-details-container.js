@@ -10,7 +10,9 @@ export default class ProjectDetailsContainer extends React.Component{
         } = this.props;
         
         return(
-            <div className = "projectDetailsContainer">
+            <div 
+                
+                className = "projectDetailsContainer">
                 <div className = "projectDetailsMediaCarouselWrapper">
                     <MediaCarousel className = "projectDetailsMediaCarousel" media_file_list = {project_dict["media_files"]}></MediaCarousel>
                 </div>

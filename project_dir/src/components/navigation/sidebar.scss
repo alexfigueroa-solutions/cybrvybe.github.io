@@ -25,7 +25,8 @@
     max-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    grid-gap: 2rem;
     color: $darkestwhite;
     padding: 0.5rem;
     width: fit-content;

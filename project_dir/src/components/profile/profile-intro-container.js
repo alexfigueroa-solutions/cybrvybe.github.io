@@ -7,7 +7,9 @@ import PersonalDiagnosticsContainer from "./personal-diagnostics-container";
 export default class ProfileIntroContainer extends React.Component{
     render(){
         return(
-            <div className = "profileIntroContainerWrapper">
+            <div 
+               
+                className = "profileIntroContainerWrapper">
                 <SectionDividingLabel label_name = {"Intro"}>
                     
                 </SectionDividingLabel>

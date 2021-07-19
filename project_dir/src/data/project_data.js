@@ -1,6 +1,10 @@
 import au7oma7a_bi_pic from "../images/projects/income-expense-affordability.png";
 import portfolio_one_pic from "../images/projects/portfolio-one.png"
+import portfolio_two_mockup from "../images/projects/portfolio-two/desktop-mockup.png";
+import au7oma7a_bi_mockup from "../images/projects/au7oma7a/dark-studio-desktop-mockup.png";
+import beatcommerce_mockup from "../images/projects/beatcommerce/homepage-desktop-mockup.png";
 import beat_commerce_pic from "../images/projects/beat-commerce.png";
+import portfolio_one_mockup from "../images/projects/portfolio-one/desktop-mockup.png";
 import netwyrk_pic from "../images/projects/netwyrk.png";
 import neohacker_pic from "../images/projects/neo-hacker.png";
 import { faCheck, faCog, faDatabase, faMinus, faSpinner } from "@fortawesome/free-solid-svg-icons";
@@ -17,11 +21,14 @@ import portfolio_one_pic_2 from "../images/projects/portfolio_one_capabilities_p
 import neohacker_pic_1 from "../images/projects/preview_2.png";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-config.autoAddCss = false
+import netwyrk_mockup from "../images/projects/netwyrk/desktop-mockup.png";
+import neohacker_mockup from "../images/projects/neohacker/desktop-mockup.png";
+config.autoAddCss = false;
 
 const project_list = [
     {
         title: "AU70MA7A-BI",
+        mockup: au7oma7a_bi_mockup,
         subtitle: "Business Intelligence Platform",
         features: [
             {
@@ -94,6 +101,7 @@ const project_list = [
             
             
         ],
+        path: "/projects/AU7OMA7A-BI",
         demonstrated_capabilities: [
             {
                 title: "Ability to create a REST API and fetch data on client's request.",
@@ -222,6 +230,7 @@ const project_list = [
     },
     {
         title: "BeatCommerce",
+        mockup: beatcommerce_mockup,
         subtitle: "Digital Audio Asset E-Commerce Site",
         features: [
             {
@@ -270,6 +279,7 @@ const project_list = [
 
 
         ],
+        path: "/projects/beat-commerce",
         demonstrated_capabilities: [
             {
                 title: "Translated client requirements into executable, technical requirements.",
@@ -393,6 +403,8 @@ const project_list = [
     {
         title: "Netwyrk",
         subtitle: "",
+        mockup: netwyrk_mockup,
+        path: "/projects/netwyrk",
         features: [
             {
                 title: "Profile Feed",
@@ -533,6 +545,8 @@ const project_list = [
     },
     {
         title: "Portfolio Two",
+        mockup: portfolio_two_mockup,
+        path: "/projects/portfolio-two",
         repo_link: "https://github.com/cybrvybe/cybrvybe.github.io",
         description: "Portfolio Two is a software engineering/web development portfolio.",
         features: [
@@ -631,6 +645,8 @@ const project_list = [
     },
     {
         title: "Portfolio One",
+        mockup: portfolio_one_mockup,
+        path: "/projects/portfolio-one",
         stack: [
             {
                 title: "Gatsby",
@@ -735,6 +751,8 @@ const project_list = [
     {
         title: "NeoHacker VsCode Theme",
         img_file: neohacker_pic,
+        mockup: neohacker_mockup,
+        path: "/projects/neohacker-vscode-theme",
         media_files: [
             neohacker_pic,
             neohacker_pic_1

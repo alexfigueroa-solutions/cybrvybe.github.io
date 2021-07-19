@@ -7,7 +7,9 @@ export default class ProfileSkillsContainer extends React.Component{
     render(){
         
         return(
-            <div className = "mainWrapper">
+            <div 
+                    
+                className = "mainWrapper">
                 <SectionDividingLabel label_name = "Skills"></SectionDividingLabel>
                 <div className ="listsWrapperWrapper">
                     <div className = "listsWrapper">

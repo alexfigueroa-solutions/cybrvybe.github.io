@@ -43,7 +43,8 @@ export default class Sidebar extends React.Component{
                     </div>
                 <div className = "mainNavContainer">
                     
-                    <div className = "tabsSection">
+                    <div 
+                        >
                     
                         <div className = {classOpenSidebar} style = {this.state.sidebarBackgroundColor} id = "sidebarWrapper">
                             
@@ -60,7 +61,8 @@ export default class Sidebar extends React.Component{
                                 {
                                     social_list.map(
                                         social_link => (
-                                            <a href = {social_link.link}>
+                                            <a 
+                                                href = {social_link.link}>
                                                 <FontAwesomeIcon 
                                                     icon = {social_link.icon_class}
                                                     className = "socialIcon">
@@ -77,7 +79,6 @@ export default class Sidebar extends React.Component{
                                     nav_list.map(
                                         nav_item => (
                                             <Link to = {nav_item.link}
-                                            activeClassName = "navItemWrapperSelected"
                                             className = "navItemWrapper">
                                                 <FontAwesomeIcon icon = {nav_item.icon_class} className = "icon">
                                                 </FontAwesomeIcon>

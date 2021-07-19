@@ -6,7 +6,8 @@ import ProjectRoadmap from "../projects/project-roadmap";
 export default class ProfileRoadmapContainer extends React.Component{
     render(){
         return(
-            <div className = "profileRoadmapContainerWrapper">
+            <div 
+                className = "profileRoadmapContainerWrapper">
                 <SectionDividingLabel label_name = "Technical/Business Development">
 
                 </SectionDividingLabel>

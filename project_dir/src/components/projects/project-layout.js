@@ -26,16 +26,22 @@ export default class ProjectLayout extends React.Component{
                             
                             </div>  
                     </div>
-                    <div className = "secondSectionProjectLayout">
+                    <div
+                        
+                        className = "secondSectionProjectLayout">
                         <ProjectDetailsContainer project_dict = {project_dict}></ProjectDetailsContainer>
                         <ProjectBreakdownTabs project_features = {project_dict["features"]} project_demonstrated_capabilities = {project_dict["demonstrated_capabilities"]}></ProjectBreakdownTabs>
                     </div>
                     <SectionDividingLabel label_name = "Stack"></SectionDividingLabel>
-                    <div className = "firstSectionProjectLayout">
+                    <div 
+                        
+                        className = "firstSectionProjectLayout">
                         <ProjectStackContainer project_stack = {project_dict["stack"]}></ProjectStackContainer>
                     </div>
                     <SectionDividingLabel label_name = "Roadmap"></SectionDividingLabel>
-                    <div className = "thirdSectionProjectLayout">
+                    <div 
+                        
+                        className = "thirdSectionProjectLayout">
                     
                         <ProjectRoadmap roadmap = {project_dict["roadmap"]}></ProjectRoadmap>
                     </div>

@@ -6,7 +6,9 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 export default class ResumeDownloadBtn extends React.Component{
     render(){
         return(
-            <div className = "resumeDownloadBtnWrapper">
+            <div 
+               
+                className = "resumeDownloadBtnWrapper">
                 <a className = "resumeDownloadBtnLink" href = {resume_file} download>
                     <div className = "resumeDownloadBtnDiv">
                         <FontAwesomeIcon className = "resumeDownloadIcon" icon = {faDownload}></FontAwesomeIcon>

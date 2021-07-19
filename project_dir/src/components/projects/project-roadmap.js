@@ -1,5 +1,6 @@
 import React from "react";
 import "./project-roadmap.scss";
+
 import SectionDividingLabel from "../general/section-dividing-label";
 export default class ProjectRoadmap extends React.Component{
 
@@ -13,7 +14,9 @@ export default class ProjectRoadmap extends React.Component{
                 {
                    roadmap.map(
                        roadmap_item => (
-                           <div className = "timelineItem">
+                           <div
+                           
+                            className = "timelineItem">
                                <div className = "timelineItemContent">
                                    
                                     <h3 className = "timelineItemTitle">

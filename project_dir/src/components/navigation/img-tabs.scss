@@ -5,24 +5,13 @@
     display: flex;
     flex-flow: row nowrap;
     height: 100vh;
-    width: 175vh;
+
     background-color: $darkerblack;
 
 
 }
-.panelWrapper{
-    background-color: $darkerblack;
-    margin-right: 0rem;
-    position: relative;
-    width: 100%;
 
-}
-.panelDiv{
-    background-color: $darkerblack;
-    margin-right: 0rem;
-    margin-left: 0rem;
-    
-}
+
 
 .tabList{
     list-style: none;
@@ -46,13 +35,15 @@
     padding-left: 0rem;
     padding-top: 0rem;
     margin: 0rem 0rem 0rem 0rem;
-    background-size: cover;                      /* <------ */
+    background-size: 150%;                      /* <------ */
     background-repeat: no-repeat;
     background-position: center center; 
     border: 0.1rem solid $darkerblack;  
-    background-color: rgba(5, 5, 5, 0.884);
+    background-color: $darkestblack;
     filter: brightness(60%);
     display: flex;
+    color: $darkestwhite;
+    text-decoration: none;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
@@ -66,8 +57,10 @@
 
 .tab:hover{
     filter: brightness(130%);
+    color: $normalprimary;
+    border-radius: 10px;
     .projectTitleDiv{
-        
+        visibility: visible;
         padding: 0.5rem;
         width: 100%;
         height: 100%;
@@ -79,8 +72,13 @@
 }
 .selectedTab{
     filter: brightness(130%);
+    color: $normalprimary;
     border: 0.1rem solid $primarydull; 
+    border-radius: 10px;
     
+    .projectTitleDiv{
+        visibility: visible;
+    }
 
 }
 .projectTitleDiv{
@@ -90,6 +88,7 @@
     height: 100%;
     text-align: center;
     align-items: center;
+    visibility: hidden;
     overflow-y: auto;
     text-shadow: rgb(0,0,0) 0rem 0rem 2rem;
 

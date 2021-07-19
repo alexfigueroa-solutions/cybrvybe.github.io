@@ -6,8 +6,19 @@ export default class SectionDividingLabel extends React.Component{
             label_name
         } = this.props;
         return(
-            <div className = "dividingLabelDiv">
-                <h2 className = "dividingLabelText">{label_name}</h2>
+            <div 
+                data-sal = "slide-right"
+                data-sal-duration = "500"
+                data-sal-delay = "0"
+                data-sal-easing = "ease"
+                className = "dividingLabelDiv">
+                    <div class="container">
+                        <div class="glitch" data-text={label_name}>{label_name}</div>
+                        <div class="glow">{label_name}</div>
+                        
+                    </div>
+                    <div class="scanlines"></div>
+                
             </div>
         )
     }

@@ -3,7 +3,8 @@
 .profileLayoutWrapperWrapper{
     display: flex;
     flex-flow: row nowrap;
- 
+    overflow-x:hidden;
+    width: 100vh;
     
 
 }

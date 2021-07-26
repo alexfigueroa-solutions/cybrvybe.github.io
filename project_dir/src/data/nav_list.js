@@ -16,11 +16,6 @@ const nav_list = [
         icon_class: faProjectDiagram,
         title: "Projects",
         link: "/projects"
-    },
-    {
-        icon_class: faBlog,
-        title: "Blog",
-        link: "/blog"
     }
   ];
   const social_links = [

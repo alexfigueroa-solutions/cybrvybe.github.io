@@ -5,7 +5,7 @@ const blog_list = [
     
     {
         title: "The 4th Industrial Revolution: 10 World-Shifting Technological Predictions for the 2020s",
-        img_file: tech_predictions_2020s_pic,
+        mockup: tech_predictions_2020s_pic,
         intro: "The 4th Industrial Revolution is easily understood when compared to previous industrial revolutions. The 1st Industrial Revolution took place during the agricultural revolution — it allowed civilization to take the leap from a nomadic lifestyle to one with permanent settlements. The 2nd Industrial Revolution came about with the invention of the steam engine — this embedded human civilization with heavy machine leverage and changed the face of work forever. The 3rd Industrial Revolution is marked by the proliferation of information technologies: social media, the internet, the transistor — this allowed civilization to harness the capabilities of digital and information technologies. The 4th Industrial Revolution comprises of intersecting and emerging technologies in the realms of gene editing, advanced cybernetics, AI, blockchain, XR (a catch-all term for AR/VR/MR meaning 'Extended Reality'), nanotechnology, materials science, space technology, robotics, synthetic biology, 3D printing, IoT, 5G, and hyperautomation — this will allow human civilization to take full control over some of nature’s most foundational systems (ex: the human genome, intelligence, neuropsychology, biological sensory perception, among many many others).",
         sections: [
             {

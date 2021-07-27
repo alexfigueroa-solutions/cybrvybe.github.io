@@ -404,7 +404,7 @@ const project_list = [
         title: "Netwyrk",
         subtitle: "",
         mockup: netwyrk_mockup,
-        path: "/projects/netwyrk",
+        path: "/projects/netwyrk/",
         features: [
             {
                 title: "Profile Feed",

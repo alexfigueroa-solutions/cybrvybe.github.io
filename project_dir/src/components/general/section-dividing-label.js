@@ -12,12 +12,12 @@ export default class SectionDividingLabel extends React.Component{
                 data-sal-delay = "0"
                 data-sal-easing = "ease"
                 className = "dividingLabelDiv">
-                    <div class="container">
-                        <div class="glitch" data-text={label_name}>{label_name}</div>
-                        <div class="glow">{label_name}</div>
+                    <div className = "container">
+                        <div className="glitch" data-text={label_name}>{label_name}</div>
+                        <div className="glow">{label_name}</div>
                         
                     </div>
-                    <div class="scanlines"></div>
+                    <div className="scanlines"></div>
                 
             </div>
         )

@@ -1,5 +1,5 @@
 {
-  "desktop-mockup.png": "static/desktop-mockup-ae51d176d088c75037b6fae17b554125.png",
+  "desktop-mockup.png": "static/desktop-mockup-9b79513163631ae907d61b22468d4822.png",
   "main.js": "render-page.js",
   "render-page.js.map": "render-page.js.map",
   "static/automata.png": "static/automata-a63ae2f917f11b4e04363494b621c3df.png",
@@ -10,9 +10,11 @@
   "static/desktop-mockup.png": "static/desktop-mockup-3d5d073c8015188d1e063f9fc9936ad7.png",
   "static/general.webp": "static/general-6578d258a6185055abf96fce0008e7aa.webp",
   "static/homepage-desktop-mockup.png": "static/homepage-desktop-mockup-07b89c047d8af28de960d9c9466b82e7.png",
+  "static/homepage.png": "static/homepage-0bac84d885e87c522e6eaf225eac5308.png",
   "static/income-expense-affordability.png": "static/income-expense-affordability-171a5af5ac4d04131954586118553956.png",
   "static/income-expense-allocation.png": "static/income-expense-allocation-d4db64e6711591a7f7348f4856f2e040.png",
   "static/landing-page.webp": "static/landing-page-21000b39f0cb4b521b2996899981abcc.webp",
+  "static/login-page.png": "static/login-page-fdb1dc797de9e2674328d64dff85372e.png",
   "static/mailchimp.svg": "static/mailchimp-35cd6c0a1edb44df7c2ccf3124f7cf25.svg",
   "static/neo-hacker.png": "static/neo-hacker-a75d3f7852c1d8142fe6b73b4c033085.png",
   "static/netwyrk.png": "static/netwyrk-c0f6dee53e34f710703000badfb9179e.png",
@@ -28,6 +30,7 @@
   "static/projects_page.png": "static/projects_page-1bea7187f7d5e44622e51f7a939fb450.png",
   "static/resume.pdf": "static/resume-bd996b399bd44b94d7b7029c31a84011.pdf",
   "static/rpa.webp": "static/rpa-6a62e66287950ef8a76b2c5af1b91498.webp",
+  "static/sign-up-page.png": "static/sign-up-page-c6592eb137fb4ea1f3ca26ef938e030b.png",
   "static/tech-predictions-2020s.jpg": "static/tech-predictions-2020s-e1b94a03a93c3c2c7fd902dd0068d1f1.jpg",
   "static/web-app.webp": "static/web-app-6895784ec1dc00c9c02a3c589cb9491a.webp"
 }

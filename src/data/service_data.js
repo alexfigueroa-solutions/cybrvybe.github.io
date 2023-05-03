@@ -1,5 +1,4 @@
 import business_analytics from "../images/services/business-analysis.webp";
-import general_pic from "../images/services/general.webp";
 import landing_page_pic from "../images/services/landing-page.webp";
 import web_app_pic from "../images/services/web-app.webp";
 import personal_db_pic from "../images/services/personal-db.webp";

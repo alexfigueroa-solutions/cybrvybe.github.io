@@ -83,6 +83,8 @@ typings/
 dist
 
 public
+package-lock.json
+IGNORE.txt
 
 # Gatsby files
 .cache/

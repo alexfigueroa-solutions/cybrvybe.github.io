@@ -1,5 +1,4 @@
 import React from "react";
-import AnimatedHead from "../animated/animated-head-canvas";
 import AnimatedTyper from "../animated/animated_typer";
 import "./personal-diagnostics-container.scss";
 export default class PersonalDiagnosticsContainer extends React.Component{

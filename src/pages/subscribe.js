@@ -1,8 +1,6 @@
 import React from "react";
 import SubscribeForm from "../components/general/subscribe-form";
 import "./subscribe.scss";
-import Sidebar from "../components/navigation/sidebar";
-import array from "../data/nav_list";
 export default function SubscribePage(){
 
     return <div className = "SubscribePageWrapperWrapper">

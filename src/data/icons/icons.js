@@ -1,18 +1,5 @@
-import DjangoLogo from "./django.svg";
-import AdobeXdLogo from "./adobe-xd.svg";
-import CssLogo from "./css.svg";
-import FigmaLogo from "./figma.svg";
-import GatsbyLogo from "./gatsby.svg";
-import HtmlLogo from "./html.svg";
-import JavaLogo from "./java.svg";
-import JavascriptLogo from "./javascript.svg";
-import MailChimpLogo from "./mailchimp.svg";
-import PostgresLogo from "./postgres.svg";
-
 import RLogo from "./r.svg";
-import ReactLogo from "./react.svg";
-import SassLogo from "./sass.svg";
-import React from "react";
+
 export const logos_dict = {
     django: "vscode-icons:file-type-django",
     adobe_xd: "file-icons:adobe-xd",

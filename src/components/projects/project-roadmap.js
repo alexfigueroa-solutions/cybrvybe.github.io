@@ -1,7 +1,5 @@
 import React from "react";
 import "./project-roadmap.scss";
-
-import SectionDividingLabel from "../general/section-dividing-label";
 export default class ProjectRoadmap extends React.Component{
 
     render(){

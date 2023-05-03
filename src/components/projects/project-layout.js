@@ -7,7 +7,6 @@ import "./project-layout.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 import SectionDividingLabel from "../general/section-dividing-label";
-import { Font } from "three";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt, faLink } from "@fortawesome/free-solid-svg-icons";
 

@@ -7,8 +7,6 @@ import beat_commerce_pic from "../images/projects/beat-commerce.png";
 import portfolio_one_mockup from "../images/projects/portfolio-one/desktop-mockup.png";
 import netwyrk_pic from "../images/projects/netwyrk.png";
 import neohacker_pic from "../images/projects/neo-hacker.png";
-import { faCheck, faCog, faDatabase, faMinus, faSpinner } from "@fortawesome/free-solid-svg-icons";
-import { faPython, faReact, faSass, faStripe } from "@fortawesome/free-brands-svg-icons";
 import { logos_dict, status_icons } from "./icons/icons";
 import portfolio_two_pic_1 from "../images/projects/projects_page.png";
 import portfolio_two_pic_2 from "../images/projects/portfolio_two_coming_soon_page.png";

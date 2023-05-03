@@ -2,30 +2,11 @@ import * as React from "react";
 import Sidebar from "../components/navigation/sidebar";
 import "./index.scss";
 import AnimatedTyper from "../components/animated/animated_typer";
-import ContactLayout from "../components/contact/contact-layout";
-import dict from "../data/profile_data";
 import array from "../data/nav_list";
-import ItemList from "../components/navigation/item-list";
-import project_list from "../data/project_data";
-import ImgTabs from "../components/navigation/img-tabs";
-import ProjectTabPanelLayout from "../components/projects/project-tab-panel-layout";
-import BlogTabPanelLayout from "../components/blogs/blog-tab-panel-layout";
-import blog_list from "../data/blog_data";
-import services_list from "../data/service_data";
 import { Link } from "gatsby";
-import ProfileLayout from "../components/profile/profile-layout";
-import startup_list from "../data/startup_data";
-import StartupTabPanelLayout from "../components/startups/startup-tab-panel-layout";
-// markup
-import SubscribeForm from "../components/general/subscribe-form";
-import ComingSoonLayout from "../components/navigation/coming-soon-layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPlusCircle, faSubscript } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 const IndexPage = () => {
-  const profile_skills_tab_panel_list = [
-    <ItemList items_list = {dict["technical_skills_list"]}></ItemList>,
-    <ItemList items_list = {dict["business_skills_list"]}></ItemList>
-  ];
   return (
     
     <main>

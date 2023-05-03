@@ -1,5 +1,4 @@
-import { faBrain, faBriefcase, faChartLine, faCode, faCog, faDatabase, faHandsHelping, faIcons, faLightbulb, faMale, faMarker, faMicrochip, faObjectGroup, faProjectDiagram, faPuzzlePiece, faQuestion, faQuestionCircle, faRandom, faStreetView } from "@fortawesome/free-solid-svg-icons";
-import { faFigma, faGit, faGithub, faPython, faReact, faRProject, faSass} from "@fortawesome/free-brands-svg-icons";
+import { faBriefcase, faMicrochip} from "@fortawesome/free-solid-svg-icons";
 import { action_icons, logos_dict, status_icons } from "./icons/icons";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";

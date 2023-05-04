@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogPage from './blog-page';
+import BlogPage from '../BlogPage/blog-page';
 import './blog-tab-panel-layout.scss';
 export default class BlogTabPanelLayout extends React.Component {
   render() {

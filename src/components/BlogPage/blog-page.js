@@ -1,5 +1,5 @@
 import React from 'react';
-import './blog-page.scss';
+import '../BlogPage/blog-page.scss';
 export default class BlogPage extends React.Component {
   render() {
     const { blog_post = [] } = this.props;
@@ -12,8 +12,8 @@ export default class BlogPage extends React.Component {
           <h3>{blog_post.intro}</h3>
         </div>
         <div className="blogPageBodySectionsDiv">
-          {blog_post.sections.map((section) => (
-            <div className="blogPostBodySectionDiv">
+          {blog_post.sections.map((section, index) => (
+            <div className="blogPostBodySectionDiv" key={index}>
               <div className="blogPostBodySectionHeaderDiv">
                 <p className="blogPostBodySectionHeader">{section.header}</p>
               </div>

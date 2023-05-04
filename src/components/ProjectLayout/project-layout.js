@@ -1,14 +1,13 @@
 import React from 'react';
-import ProjectStackContainer from '../projects/project-stack-container';
+import ProjectStackContainer from '../ProjectStack/project-stack-container';
 import ProjectDetailsContainer from '../ProjectDetails/project-details-container';
 import ProjectBreakdownTabs from '../ProjectBreakdownTabs/project-breakdown-tabs';
 import ProjectRoadmap from '../ProjectRoadmap/project-roadmap';
-import './project-layout.scss';
+import '../ProjectLayout/project-layout.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import SectionDividingLabel from '../SectionDividingLabel/section-dividing-label';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkAlt, faLink } from '@fortawesome/free-solid-svg-icons';
 
 export default class ProjectLayout extends React.Component {
   render() {

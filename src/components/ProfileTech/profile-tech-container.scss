@@ -1,5 +1,5 @@
 @import '../abstract/color';
-@import './profile-traits-container.scss';
+@import '../ProfileTraits/profile-traits-container.scss';
 .profileTechContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, 10rem);

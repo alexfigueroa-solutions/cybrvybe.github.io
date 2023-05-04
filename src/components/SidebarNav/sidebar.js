@@ -1,13 +1,11 @@
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../navigation/sidebar.scss';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import '../SidebarNav/sidebar.scss';
 import 'react-tabs/style/react-tabs.css';
 import Image from '../Image';
 import array from '../../data/nav_list';
 import TextChanger from '../TextChanger/text-changer';
-import AnimatedTyper from '../AnimatedTyper/animated_typer';
 import ResumeDownloadBtn from '../ResumeDownloadButton/resume-download-btn';
 
 import { Link } from 'gatsby';
@@ -62,7 +60,7 @@ export default class Sidebar extends React.Component {
 
               <div className="socialWrapper">
                 {social_list.map((social_link) => (
-                  <a href={social_link.link}>
+                  <a href={social_link.link} key={1}>
                     <FontAwesomeIcon
                       icon={social_link.icon_class}
                       className="socialIcon"
@@ -72,7 +70,7 @@ export default class Sidebar extends React.Component {
               </div>
               <div className="navWrapper">
                 {nav_list.map((nav_item) => (
-                  <Link to={nav_item.link} className="navItemWrapper">
+                  <Link to={nav_item.link} className="navItemWrapper" key={2}>
                     <FontAwesomeIcon
                       icon={nav_item.icon_class}
                       className="icon"

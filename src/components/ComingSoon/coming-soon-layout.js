@@ -1,7 +1,7 @@
 import React from 'react';
-import AnimatedTyper from '../animated/animated_typer';
+import AnimatedTyper from '../AnimatedTyper/animated_typer';
 import './coming-soon-layout.scss';
-import EmailForm from '../general/subscribe-form';
+import EmailForm from '../SubscribeForm/subscribe-form';
 export default class ComingSoonLayout extends React.Component {
   render() {
     return (

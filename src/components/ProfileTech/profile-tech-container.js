@@ -1,7 +1,6 @@
 import React from 'react';
 import SectionDividingLabel from '../SectionDividingLabel/section-dividing-label';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../profile/profile-tech-container.scss';
+import '../ProfileTech/profile-tech-container.scss';
 export default class ProfileTechContainer extends React.Component {
   render() {
     const { tech_list = [] } = this.props;
@@ -18,12 +17,9 @@ export default class ProfileTechContainer extends React.Component {
                 data-sal-delay="0"
                 data-sal-easing="ease"
                 className="techEntryContainer"
+                key={1}
               >
-                <span
-                  className="techIcon"
-                  class="iconify"
-                  data-icon={tech_entry.icon}
-                ></span>
+                <span className="techIcon" data-icon={tech_entry.icon}></span>
                 <h3 className="techEntryTitle">{tech_entry.title}</h3>
               </div>
             ))}

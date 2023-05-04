@@ -1,6 +1,5 @@
 import React from 'react';
-import '../profile/profile-traits-container.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../ProfileTraits/profile-traits-container.scss';
 export default class ProfileTraitsContainer extends React.Component {
   render() {
     const { traits_list = [] } = this.props;
@@ -13,12 +12,13 @@ export default class ProfileTraitsContainer extends React.Component {
             data-sal-delay="50"
             data-sal-easing="ease"
             className="traitContainerWrapper"
+            key={1}
           >
             <div className="traitContainer">
               <div className="traitIconDiv">
                 <span
                   className="traitIcon"
-                  class="iconify"
+                  className="iconify"
                   data-icon={trait.icon}
                   data-inline="false"
                 ></span>

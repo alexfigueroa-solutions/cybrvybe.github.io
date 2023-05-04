@@ -1,0 +1,35 @@
+@import '../abstract/color';
+
+.profileIntroContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  left: 0rem;
+  height: 100%;
+  padding-bottom: 0rem;
+}
+
+.introTitleWrapper {
+  width: fit-content;
+  padding: 0rem 0.5rem;
+  color: $darkestwhite;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+.title {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 700px) {
+  .profileIntroContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 0rem;
+    top: 0rem;
+    height: auto;
+  }
+  .profileIntroContainerWrapper {
+  }
+}

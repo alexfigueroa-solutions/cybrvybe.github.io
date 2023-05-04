@@ -1,0 +1,14 @@
+.contactLayoutWrapper {
+  height: 45rem;
+  width: 81.25rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.contactFormWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+}

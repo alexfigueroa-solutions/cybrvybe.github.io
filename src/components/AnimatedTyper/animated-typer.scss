@@ -1,0 +1,27 @@
+@import '../abstract/color';
+
+.animatedTyperWrapper {
+}
+.animatedTyperDiv {
+  padding: 0.5rem;
+  width: auto;
+  height: auto;
+}
+.animatedTyperText {
+  color: $normalprimary;
+  height: auto;
+  font-size: 3rem;
+  text-shadow: $normalprimary 0rem 0rem 1rem;
+}
+@font-face {
+  font-family: Digitatron;
+  src: url('../fonts/adversal.otf');
+}
+@font-face {
+  font-family: Azonix;
+  src: url('../fonts/Azonix.otf');
+}
+@font-face {
+  font-family: EastLift;
+  src: url('../fonts/East_Lift.ttf');
+}

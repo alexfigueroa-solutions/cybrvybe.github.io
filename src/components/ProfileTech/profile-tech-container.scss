@@ -1,0 +1,120 @@
+@import '../abstract/color';
+@import './profile-traits-container.scss';
+.profileTechContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 10rem);
+
+  grid-gap: 1rem;
+}
+.profileTechContainerWrapper {
+}
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  margin: 1rem;
+}
+.labelContainer {
+  width: fit-content;
+  padding: 0rem 0.5rem;
+  color: $darkestwhite;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+.label {
+}
+@keyframes techEntryContainerHover {
+  0% {
+    border-color: $darkerblack;
+    box-shadow: 0.5rem 0.5rem 1rem 0rem $darkestblack,
+      -0.5rem -0.5rem 1rem 0rem $darkblack;
+  }
+  100% {
+    border-color: $normalprimary;
+    box-shadow: 0rem 0rem 1rem 0rem $primarydull;
+  }
+}
+.techEntryContainer {
+  text-align: center;
+  background-color: $darkerblack;
+  padding: 1rem;
+  width: 8rem;
+  color: $darkestwhite;
+  border: 0.1rem solid $darkerblack;
+  height: 8rem;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  box-shadow: 0.5rem 0.5rem 1rem 0rem $darkestblack,
+    -0.5rem -0.5rem 1rem 0rem $darkblack;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.25rem;
+  justify-content: space-evenly;
+  min-width: 5rem;
+  transition: ease-in-out 0.3s;
+  animation: traitContainerHoverRev 0.6s;
+}
+.techEntryContainer:hover {
+  transition: ease-in-out 0.3s;
+
+  animation: traitContainerHover 0.3s;
+  color: $normalprimary;
+  box-shadow: 0rem 0rem 1rem 0rem $primarydull;
+  border: 0.1rem solid $normalprimary;
+}
+.techIcon {
+  font-size: 2.5rem;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: $darkblack;
+  border-radius: 10%;
+  box-shadow: 0rem 0rem 1rem 0rem $primarydull;
+  border: 0.05rem solid $normalprimary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: $primarybright;
+}
+
+@media screen and (max-width: 700px) {
+  .profileTechContainer {
+    display: flex;
+
+    min-height: 0rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+
+    align-items: flex-start;
+    box-shadow: 0.5rem 0.5rem 1rem 0rem rgb(20, 20, 20),
+      inset 0.5rem 0.5rem 1rem 0rem rgb(0, 0, 0);
+    background-color: $darkerblack;
+    max-height: 20rem;
+    grid-gap: 1rem;
+    overflow-x: scroll;
+    width: 100%;
+  }
+}
+.techIcon {
+  font-size: 6rem;
+}
+.techEntryTitle {
+  font-size: 0.6rem;
+}

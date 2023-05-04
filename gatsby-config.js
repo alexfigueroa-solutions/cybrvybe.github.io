@@ -1,59 +1,57 @@
 module.exports = {
-
-  pathPrefix: "/",
+  pathPrefix: '/',
   flags: {
-    THE_FLAG: false
+    THE_FLAG: false,
   },
   siteMetadata: {
-    title: "portfolio-two",
-    siteUrl: `https://cybrvybe.github.io/`
-    
+    title: 'portfolio-two',
+    siteUrl: `https://cybrvybe.github.io/`,
   },
   plugins: [
-    "gatsby-plugin-gatsby-cloud",
+    'gatsby-plugin-gatsby-cloud',
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        implementation: require("node-sass"),
+        implementation: require('node-sass'),
       },
     },
-    "gatsby-plugin-image",
+    'gatsby-plugin-image',
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "google",
+        trackingId: 'google',
       },
     },
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-mdx',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './src/images/',
       },
-      __key: "images",
+      __key: 'images',
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: 'pages',
+        path: './src/pages/',
       },
-      __key: "pages",
+      __key: 'pages',
     },
-  
+
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: "https://gmail.us6.list-manage.com/subscribe/post?u=cab5323e0840ac15cbc21da54&amp;id=12af27c85f"
-      }
+        endpoint:
+          'https://gmail.us6.list-manage.com/subscribe/post?u=cab5323e0840ac15cbc21da54&amp;id=12af27c85f',
+      },
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
   ],
-}
-;
+};

@@ -1,0 +1,19 @@
+@import '../abstract/color';
+
+.badgeItemWrapper {
+  text-align: center;
+  width: 3rem;
+}
+.statusDiv {
+}
+.statusLabel {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+}
+.statusIcon {
+  text-align: center;
+
+  border: $darkestwhite 0.1rem solid;
+  padding: 0.5rem;
+  border-radius: 50%;
+}

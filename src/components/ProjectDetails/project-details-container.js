@@ -1,6 +1,6 @@
 import React from 'react';
-import MediaCarousel from '../navigation/media-carousel';
-import ProjectDescriptionContainer from './project-description-container';
+import MediaCarousel from '../Carousel/media-carousel';
+import ProjectDescriptionContainer from '../ProjectDescription/project-description-container';
 import './project-details-container.scss';
 
 export default class ProjectDetailsContainer extends React.Component {

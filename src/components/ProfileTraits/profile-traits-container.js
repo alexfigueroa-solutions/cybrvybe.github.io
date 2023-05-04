@@ -18,7 +18,6 @@ export default class ProfileTraitsContainer extends React.Component {
               <div className="traitIconDiv">
                 <span
                   className="traitIcon"
-                  className="iconify"
                   data-icon={trait.icon}
                   data-inline="false"
                 ></span>

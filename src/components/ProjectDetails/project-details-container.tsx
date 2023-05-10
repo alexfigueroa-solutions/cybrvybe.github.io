@@ -1,5 +1,5 @@
 import React from 'react';
-import MediaCarousel from '../Carousel/media-carousel';
+import MediaCarousel from '../Carousel/index.tsx';
 import ProjectDescriptionContainer from '../ProjectDescription/project-description-container';
 import './project-details-container.scss';
 
@@ -11,8 +11,7 @@ export default class ProjectDetailsContainer extends React.Component {
       <div className="projectDetailsContainer">
         <div className="projectDetailsMediaCarouselWrapper">
           <MediaCarousel
-            className="projectDetailsMediaCarousel"
-            media_file_list={project_dict['media_files']}
+            mediaFileList={project_dict['media_files']}
           ></MediaCarousel>
         </div>
         <div className="projectDetailsProjectDescriptionContainerWrapper">

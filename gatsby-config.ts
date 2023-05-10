@@ -9,6 +9,9 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-gatsby-cloud',
+    'gatsby-plugin-mailchimp',
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-plugin-sass`,
       options: {

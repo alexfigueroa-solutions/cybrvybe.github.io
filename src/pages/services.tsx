@@ -1,6 +1,6 @@
 import services_list from '../data/service_data';
 import array from '../data/nav_list';
-import ImgTabs from '../components/ImgTabs/img-tabs';
+import ImgTabs from '../components/ImgTabs';
 import Sidebar from '../components/SidebarNav/sidebar';
 import ComingSoonLayout from '../components/ComingSoon/coming-soon-layout';
 

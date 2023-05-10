@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs, TabPanel, TabList, Tab } from 'react-tabs';
 import './project-breakdown-tabs.scss';
-import BadgeItem from '../BadgeItem/badge-item';
+import BadgeItem from '../BadgeItem/index.tsx';
 
 export default class ProjectBreakdownTabs extends React.Component {
   render() {

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ImgTabs from '../components/ImgTabs/img-tabs';
+import ImgTabs from '../components/ImgTabs';
 import startup_list from '../data/startup_data';
 import array from '../data/nav_list';
 import Sidebar from '../components/SidebarNav/sidebar';

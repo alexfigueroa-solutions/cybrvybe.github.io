@@ -1,9 +1,9 @@
 import * as React from 'react';
-import ImgTabs from '../components/ImgTabs/img-tabs';
+import ImgTabs from '../components/ImgTabs';
 import blog_list from '../data/blog_data';
 import array from '../data/nav_list';
 import Sidebar from '../components/SidebarNav/sidebar';
-import BlogTabPanelLayout from '../components/BlogFeed/blog-tab-panel-layout';
+import BlogTabPanelLayout from '../components/BlogFeed';
 const blog_tab_panels = [
   <BlogTabPanelLayout blog_post={blog_list[0]} key={1}></BlogTabPanelLayout>,
   <BlogTabPanelLayout blog_post={blog_list[1]} key={2}></BlogTabPanelLayout>,

@@ -1,9 +1,10 @@
 import Sidebar from '../../components/SidebarNav/sidebar';
-import ImgTabs from '../../components/ImgTabs/img-tabs';
+import ImgTabs from '../../components/ImgTabs';
 import project_list from '../../data/project_data';
 import array from '../../data/nav_list';
 import ProjectTabPanelLayout from '../../components/ProjectTabPanelLayout/project-tab-panel-layout';
-export default function AU7OMA7ABIPage() {
+
+export default function NetwyrkPage() {
   return (
     <div className="ImgTabMetaWrapper">
       <Sidebar
@@ -12,7 +13,7 @@ export default function AU7OMA7ABIPage() {
       ></Sidebar>
       <ImgTabs nav_array={project_list}>hello</ImgTabs>
       <ProjectTabPanelLayout
-        project_dict={project_list[0]}
+        project_dict={project_list[2]}
       ></ProjectTabPanelLayout>
     </div>
   );
